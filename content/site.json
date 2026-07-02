@@ -1,0 +1,64 @@
+{
+  "brandName": "Bighonda Studios",
+  "ownerName": "Saul Loubassa Bighonda",
+  "tagline": "Stories, sermons, photographs, and conversations for the renewing of the mind.",
+  "intro": "Bighonda Studios is the creative home of Saul Loubassa Bighonda - author, podcaster, photographer, and teacher exploring faith, meaning, identity, beauty, and transformation.",
+  "seoDescription": "Welcome to the creative home of Saul Loubassa Bighonda, a writer, podcaster, photographer, teacher, and speaker exploring faith, meaning, identity, beauty, and transformation.",
+  "contactEmail": "contact@bighondastudios.com",
+  "bookingUrl": "",
+  "portraitImage": "/images/portraits/saul-bighonda-portrait.png",
+  "heroImage": "/images/site/bs.jpg",
+  "mission": "To create reflective work that invites people toward truth, beauty, spiritual renewal, and a more honest way of seeing the world.",
+  "aboutBio": "Saul Loubassa Bighonda is the founder of Bighonda Studios - a creative home for writing, podcasting, photography, teaching, and conversations about transformation. Through books, sermons, photographs, and reflective storytelling, Saul explores faith, meaning, belief, identity, beauty, and the renewal of the mind.",
+  "newsletter": {
+    "headline": "Stay close to the work.",
+    "description": "Receive occasional notes on new books, sermons, photographs, essays, and events from Bighonda Studios.",
+    "buttonLabel": "Join the mailing list",
+    "url": "mailto:contact@bighondastudios.com?subject=Newsletter%20signup"
+  },
+  "socialLinks": [
+    {
+      "label": "Podcast",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "label": "Apple Books",
+      "url": "http://books.apple.com/us/book/id6762655058"
+    },
+    {
+      "label": "Amazon Author Links",
+      "url": "https://www.amazon.com/dp/B0D6BP3JJB"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/beyetransformed46"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://youtube.com/@BeYeTransformed-Podcast"
+    }
+  ],
+  "home": {
+    "featuredBookEyebrow": "Featured book",
+    "photographyIntro": "A quiet visual archive of beauty, place, memory, and attention.",
+    "eventsIntro": "Invite Saul for teaching, sermons, workshops, book talks, interviews, and thoughtful community gatherings."
+  },
+  "creativePillars": [
+    {
+      "title": "Writing",
+      "description": "Books and essays shaped by faith, doubt, fatherhood, identity, and the search for meaning."
+    },
+    {
+      "title": "Podcasting",
+      "description": "Short sermons and reflective conversations made to help listeners renew the mind."
+    },
+    {
+      "title": "Photography",
+      "description": "Images that hold attention on place, beauty, stillness, and the dignity of ordinary life."
+    },
+    {
+      "title": "Teaching",
+      "description": "Clear, grounded sessions for churches, communities, schools, interviews, and creative gatherings."
+    }
+  ]
+}

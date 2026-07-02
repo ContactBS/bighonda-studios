@@ -1,0 +1,68 @@
+backend:
+  name: github
+  repo: your-github-username/your-repo-name
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: site
+    label: Site Settings
+    files:
+      - file: content/site.json
+        label: Site Copy
+        name: site
+        fields:
+          - { label: Brand Name, name: brandName, widget: string }
+          - { label: Owner Name, name: ownerName, widget: string }
+          - { label: Tagline, name: tagline, widget: text }
+          - { label: Intro, name: intro, widget: text }
+          - { label: Contact Email, name: contactEmail, widget: string }
+          - { label: Booking URL, name: bookingUrl, widget: string, required: false }
+  - name: books
+    label: Books
+    files:
+      - file: content/books.json
+        label: Books
+        name: books
+        fields:
+          - label: Books
+            name: books
+            widget: list
+            fields:
+              - { label: Slug, name: slug, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Status, name: status, widget: string }
+              - { label: Year, name: year, widget: string }
+              - { label: Cover Image, name: coverImage, widget: image }
+  - name: podcast
+    label: Podcast
+    files:
+      - file: content/podcast.json
+        label: Podcast
+        name: podcast
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Description, name: description, widget: text }
+  - name: photos
+    label: Photos
+    files:
+      - file: content/photos.json
+        label: Photos
+        name: photos
+        fields:
+          - label: Photos
+            name: photos
+            widget: list
+            fields:
+              - { label: Slug, name: slug, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Alt Text, name: alt, widget: string }
+              - { label: Category, name: category, widget: string }
+              - { label: Price, name: price, widget: string, required: false }
+              - { label: Purchase URL, name: purchaseUrl, widget: string, required: false }

@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Can Saul speak at churches and community events?",
+    "answer": "Yes. Use the Teaching & Events page to request sermons, workshops, book talks, interviews, and custom gatherings."
+  },
+  {
+    "question": "Are photography prints available for purchase?",
+    "answer": "Yes. Each photo can include a purchase link, price, print sizes, and licensing inquiry link. Placeholder links can be replaced with Stripe Payment Links, Shopify, Gumroad, or a contact form."
+  },
+  {
+    "question": "How are podcast episodes updated?",
+    "answer": "Edit content/podcast.json. The site is ready for manual episode entries and can later be connected to an RSS build-time fetch."
+  }
+]

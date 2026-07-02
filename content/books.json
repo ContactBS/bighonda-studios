@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "what-if-you-were-wrong",
+    "title": "WHAT IF YOU WERE WRONG?",
+    "subtitle": "An Honest Conversation About Belief, Certainty, and What's at Stake",
+    "author": "Saul Loubassa Bighonda",
+    "status": "Published",
+    "year": "2026",
+    "featured": true,
+    "displayOrder": 1,
+    "coverImage": "/images/books/what-if-you-were-wrong.jpg",
+    "genre": "Faith and Philosophy",
+    "format": "Ebook and print",
+    "description": "WHAT IF YOU WERE WRONG? is not an accusation. It's an invitation. Through honest, searching conversations with atheists, Christians, and people of other faiths, Saul Loubassa Bighonda explores belief, certainty, doubt, meaning, God, and the quiet risks we take in what we choose to believe.",
+    "highlight": "Not an accusation. An invitation into an honest conversation about belief, certainty, and what is at stake.",
+    "topics": ["belief", "doubt", "God", "meaning", "certainty", "faith conversations"],
+    "purchaseLinks": [
+      {
+        "label": "Apple Books",
+        "url": "http://books.apple.com/us/book/id6762655058"
+      },
+      {
+        "label": "Amazon",
+        "url": "https://a.co/d/0bEcXLIO"
+      },
+      {
+        "label": "Google Play Books",
+        "url": "https://play.google.com/store/books/details?id=QdvREQAAQBAJ&pli=1"
+      }
+    ],
+    "related": {
+      "podcast": "Use this book as a starting point for conversations on belief, doubt, and the renewed mind.",
+      "events": "Invite Saul for a book talk, faith conversation, or moderated Q&A."
+    }
+  },
+  {
+    "slug": "dear-son-welcome-to-life",
+    "title": "Dear Son, Welcome to Life",
+    "subtitle": "An Orientation To Life On Earth From A Father To His Son",
+    "author": "Saul Loubassa Bighonda",
+    "status": "Published",
+    "year": "2024",
+    "featured": false,
+    "displayOrder": 2,
+    "coverImage": "/images/books/dear-son-welcome-to-life-cover.png",
+    "genre": "Fatherhood and Spiritual Formation",
+    "format": "Ebook and print",
+    "description": "A fatherly orientation to life on earth, written from Saul's reflections on identity, purpose, faith, government, leadership of self, repentance, and transformation through a renewed mind.",
+    "highlight": "A fatherly orientation to life, written for a son and useful for anyone learning how to carry purpose with humility.",
+    "topics": ["fatherhood", "identity", "purpose", "repentance", "self leadership", "renewed mind"],
+    "purchaseLinks": [
+      {
+        "label": "Apple Books",
+        "url": "http://books.apple.com/us/book/id6503630804"
+      },
+      {
+        "label": "Amazon",
+        "url": "https://www.amazon.com/dp/B0D6BP3JJB"
+      }
+    ],
+    "related": {
+      "podcast": "Pair this book with sermons on identity, repentance, and transformation.",
+      "events": "Invite Saul for a fatherhood, mentorship, or purpose-focused teaching session."
+    }
+  },
+  {
+    "slug": "even-science-agrees",
+    "title": "Even Science Agrees",
+    "subtitle": "Why The Bible Says Don't And What It Does To Your Mind And Body",
+    "author": "Saul Loubassa Bighonda",
+    "status": "Coming Soon",
+    "year": "TBD",
+    "featured": false,
+    "displayOrder": 3,
+    "coverImage": "/images/books/even-science-agrees.jpg",
+    "genre": "Spiritual Reflection",
+    "format": "TBD",
+    "description": "Gain insight into the biblical reasons behind God’s prohibitions.",
+    "highlight": "Biblical wisdom for understanding obedience, protection, and God's design for Christian living.",
+    "topics": ["Biblical Wisdom", "Faith", "Obedience", "God’s Design", "Christian Living"],
+    "purchaseLinks": [],
+    "related": {
+      "podcast": "Add related podcast notes here.",
+      "events": "Add related booking ideas here."
+    }
+  }
+]

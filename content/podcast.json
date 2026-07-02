@@ -1,0 +1,56 @@
+{
+  "name": "Be Ye Transformed",
+  "url": "https://byt.transistor.fm/",
+  "description": "Short and easy-to-digest sermons to help listeners not conform to the pattern and system of this world, but be transformed by the renewing of the mind.",
+  "coverImage": "/images/podcast/podcast-be-ye-transformed.jpg",
+  "listenLinks": [
+    {
+      "label": "Transistor",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "label": "Apple Podcasts",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "label": "Spotify",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://youtube.com/"
+    },
+    {
+      "label": "Amazon Music",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "label": "Overcast",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "label": "Pocket Casts",
+      "url": "https://byt.transistor.fm/"
+    }
+  ],
+  "episodes": [
+    {
+      "title": "The Renewing of the Mind",
+      "date": "2026-01-12",
+      "description": "A short sermon on becoming transformed instead of patterned by the systems around us.",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "title": "What We Choose To Believe",
+      "date": "2026-02-08",
+      "description": "A reflective episode on belief, certainty, doubt, and the quiet stakes of worldview.",
+      "url": "https://byt.transistor.fm/"
+    },
+    {
+      "title": "Identity Before Activity",
+      "date": "2026-03-03",
+      "description": "A short teaching on identity, purpose, and learning to move from a renewed inner life.",
+      "url": "https://byt.transistor.fm/"
+    }
+  ]
+}

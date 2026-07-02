@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Teaching & Sermons",
+    "shortDescription": "Clear, reflective teaching for churches, small groups, schools, and community spaces.",
+    "idealAudience": "Churches, ministries, schools, faith communities",
+    "topics": ["renewing the mind", "faith and culture", "identity", "repentance", "spiritual formation"],
+    "format": "In-person / Online / Hybrid",
+    "duration": "30-60 minutes, series available",
+    "bookingCta": "Invite Saul to teach"
+  },
+  {
+    "title": "Book Talks",
+    "shortDescription": "Guided talks and Q&A around Saul's books, including belief, fatherhood, identity, and transformation.",
+    "idealAudience": "Book clubs, churches, schools, libraries, discussion groups",
+    "topics": ["WHAT IF YOU WERE WRONG?", "Dear Son, Welcome to Life", "belief", "fatherhood", "purpose"],
+    "format": "In-person / Online / Hybrid",
+    "duration": "45-90 minutes",
+    "bookingCta": "Request a book talk"
+  },
+  {
+    "title": "Workshops",
+    "shortDescription": "Interactive sessions for groups seeking thoughtful formation, creative clarity, and practical reflection.",
+    "idealAudience": "Teams, ministries, youth groups, creative communities",
+    "topics": ["writing as reflection", "renewed thinking", "creative stewardship", "leadership of self"],
+    "format": "In-person / Online / Hybrid",
+    "duration": "Half-day or custom",
+    "bookingCta": "Plan a workshop"
+  },
+  {
+    "title": "Podcast Guest / Interview",
+    "shortDescription": "Thoughtful conversation on faith, books, meaning, doubt, creativity, and transformation.",
+    "idealAudience": "Podcasts, livestreams, radio, community media",
+    "topics": ["faith", "books", "belief", "creative practice", "spiritual transformation"],
+    "format": "Online / Studio / In-person",
+    "duration": "30-90 minutes",
+    "bookingCta": "Invite Saul as a guest"
+  },
+  {
+    "title": "Photography Exhibitions",
+    "shortDescription": "Exhibition talks, gallery conversations, creative sessions, and photography-centered events.",
+    "idealAudience": "Galleries, community spaces, creative groups, schools",
+    "topics": ["beauty", "attention", "visual storytelling", "faith and art"],
+    "format": "In-person / Hybrid",
+    "duration": "Custom",
+    "bookingCta": "Discuss an exhibition"
+  },
+  {
+    "title": "Custom Events",
+    "shortDescription": "A flexible option for gatherings that need Saul's voice, presence, teaching, or creative perspective.",
+    "idealAudience": "Churches, nonprofits, schools, community groups, creative teams",
+    "topics": ["custom topic", "moderated conversation", "retreat session", "creative gathering"],
+    "format": "In-person / Online / Hybrid",
+    "duration": "Custom",
+    "bookingCta": "Start a conversation"
+  }
+]
