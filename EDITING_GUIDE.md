@@ -82,10 +82,10 @@ public/videos/
 Use public paths in content:
 
 ```json
-"/videos/teaching-at-vois.mp4"
+"/videos/example-teaching.mp4"
 ```
 
-The page also supports external YouTube and Vimeo URLs. For future large video files, prefer YouTube, Vimeo, Cloudinary, or another hosted video service instead of storing large files in the repository.
+The page also supports external YouTube, YouTube Shorts, Vimeo, and direct hosted video URLs such as Cloudinary MP4 links. For large video files, prefer YouTube, Vimeo, Cloudinary, or another hosted video service instead of storing large files in the repository.
 
 ## Podcast
 

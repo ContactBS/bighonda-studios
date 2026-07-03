@@ -2,16 +2,10 @@
 
 ## Current Teaching Video
 
-The uploaded video was moved to:
+The current Teaching Videos entry uses an external YouTube Shorts embed:
 
 ```text
-public/videos/teaching-at-vois.mp4
-```
-
-The website path is:
-
-```text
-/videos/teaching-at-vois.mp4
+https://youtube.com/shorts/BLuYqPFmHpM?si=i932Co5zqYbUC6Zf
 ```
 
 It appears on:
@@ -27,6 +21,8 @@ content/videos.json
 ```
 
 ## Add a Video Locally
+
+Local videos are still supported for small files, but external hosting is preferred.
 
 1. Put a small video file in `public/videos/`.
 2. Rename it with lowercase letters, no spaces, and hyphens.
@@ -85,7 +81,7 @@ The current live site uses the local fallback JSON files so the build works with
 
 ## Strong Recommendation For Future Videos
 
-The current video is stored locally so it can display now. Future large videos should not be stored directly in the GitHub repository because they can make the repo slow and expensive to clone/deploy.
+The current video is embedded from YouTube. Large videos should not be stored directly in the GitHub repository because they can make the repo slow and expensive to clone/deploy.
 
 For future videos, prefer:
 
@@ -94,4 +90,4 @@ For future videos, prefer:
 - Cloudinary video hosting
 - Sanity asset hosting
 
-The Teaching Videos page supports local `/videos/...` files and YouTube/Vimeo URLs.
+The Teaching Videos page supports local `/videos/...` files, YouTube/YouTube Shorts, Vimeo URLs, and direct hosted video URLs such as Cloudinary MP4 links.

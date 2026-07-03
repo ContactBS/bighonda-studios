@@ -74,13 +74,31 @@ function VideoEmbed({ video }: { video: TeachingVideo }) {
 }
 
 function getEmbedUrl(videoUrl: string) {
-  const youtubeMatch = videoUrl.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
-  if (youtubeMatch?.[1]) return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+  try {
+    const url = new URL(videoUrl);
+    const host = url.hostname.replace(/^www\./, "");
 
-  const vimeoMatch = videoUrl.match(/vimeo\.com\/(\d+)/);
-  if (vimeoMatch?.[1]) return `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+    if (host === "youtube.com" || host === "m.youtube.com" || host === "youtu.be") {
+      const videoId = getYouTubeId(url);
+      if (videoId) return `https://www.youtube.com/embed/${videoId}`;
+    }
+
+    if (host === "vimeo.com" || host === "player.vimeo.com") {
+      const videoId = url.pathname.split("/").filter(Boolean).pop();
+      if (videoId && /^\d+$/.test(videoId)) return `https://player.vimeo.com/video/${videoId}`;
+    }
+  } catch {
+    return "";
+  }
 
   return "";
+}
+
+function getYouTubeId(url: URL) {
+  if (url.hostname === "youtu.be") return url.pathname.split("/").filter(Boolean)[0] || "";
+  if (url.pathname.startsWith("/shorts/")) return url.pathname.split("/").filter(Boolean)[1] || "";
+  if (url.pathname.startsWith("/embed/")) return url.pathname.split("/").filter(Boolean)[1] || "";
+  return url.searchParams.get("v") || "";
 }
 
 function getVideoType(videoUrl: string) {
