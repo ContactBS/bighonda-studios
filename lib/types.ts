@@ -43,6 +43,21 @@ export type Photo = {
   featured: boolean;
 };
 
+export type TeachingVideo = {
+  slug: string;
+  title: string;
+  description: string;
+  videoUrl: string;
+  externalVideoUrl?: string;
+  thumbnailUrl: string;
+  date: string;
+  category: string;
+  tags: string[];
+  duration: string;
+  featured: boolean;
+  visibility: string;
+};
+
 export type Service = {
   title: string;
   shortDescription: string;

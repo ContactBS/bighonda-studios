@@ -15,7 +15,7 @@ export default function PhotographyPage() {
         <SectionHeader
           eyebrow="Photography"
           title="Fine-art, editorial, and commissioned images."
-          description="Browse photographs by category, request prints, license images, or commission Saul for a creative session. Every image, price, size, and purchase link is editable in content/photos.json."
+          description="Browse photographs by category, request prints, license images, or commission Saul for a creative session. Images can use local fallback content now and CMS-managed entries after admin setup."
         />
         <div className="mt-10">
           <PhotoGallery photos={photos} />

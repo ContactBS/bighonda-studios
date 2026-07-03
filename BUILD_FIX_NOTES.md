@@ -403,3 +403,138 @@ Finalizing page optimization ...
 
 - The broken-path search now only finds intentional documentation examples in `EDITING_GUIDE.md` and `BUILD_FIX_NOTES.md`.
 - The dev server reported Ready, but separate sandboxed `curl` commands could not connect to port 3002. The production build completed successfully.
+
+## Teaching Videos and Media CMS Update - 2026-07-03
+
+### Root Cause
+
+The build hang returned after the project was moved to the experimental/newer `next@16.2.10` + React 19 package set and the local `node_modules` tree contained duplicated package files and directories such as `@next 2`, `cjs 2`, and `package 2.json`. In that state, even `npx next info` hung before completing, so the failure was in the local Next/tooling install state, not in the new Teaching Videos route.
+
+The fix was to restore the known-good stable package set from the earlier completed build, move stale artifacts aside, reinstall cleanly, and keep `next.config.mjs` minimal.
+
+### Environment Info
+
+Commands run:
+
+```bash
+npx next info
+node -v
+npm -v
+npm ls next react react-dom typescript --depth=0
+```
+
+Summary:
+
+```text
+Node: v22.17.0
+npm: 10.9.2
+next: 15.5.19
+react: 18.3.1
+react-dom: 18.3.1
+typescript: 5.8.3
+```
+
+`npx next info` completed successfully. It warned that the latest canary version could not be fetched because network fetch failed, which does not affect the local production build.
+
+### Files Changed
+
+- `package.json` / `package-lock.json`
+  - Restored the stable build-compatible package set:
+    - `next@15.5.19`
+    - `react@18.3.1`
+    - `react-dom@18.3.1`
+    - `@types/react@18.3.18`
+    - `@types/react-dom@18.3.5`
+    - `typescript@5.8.3`
+  - Regenerated `package-lock.json` with a clean `npm install`.
+
+- `tsconfig.json`
+  - Next.js updated `jsx` to `preserve`, which is the expected setting for Next's compiler.
+
+- `public/videos/teaching-at-vois.mp4`
+  - Added the uploaded teaching video as a public, web-safe MP4 asset.
+
+- `content/videos.json`
+  - Added the build-safe local fallback content entry for `Teaching at VOIS`.
+
+- `app/teaching-videos/page.tsx`
+  - Added the new `/teaching-videos` route with local `<video>` support and YouTube/Vimeo embed support.
+
+- `lib/types.ts` / `lib/content.ts`
+  - Added the `TeachingVideo` type and exported normalized video content.
+
+- `components/Header.tsx` / `components/Footer.tsx` / `app/sitemap.ts`
+  - Added the Teaching Videos link and sitemap route.
+
+- `public/admin/config.yml`
+  - Added Decap CMS scaffolding for Site Settings, Teaching Videos, and Photography.
+
+- `content/cms/**` and `public/uploads/**`
+  - Added placeholder folders for future CMS-managed entries and uploads.
+
+- `EDITING_GUIDE.md`, `MEDIA_UPLOAD_GUIDE.md`, `CMS_SETUP_GUIDE.md`
+  - Documented local video/photo workflows, Decap CMS setup, and large-video hosting recommendations.
+
+- `scripts/validate-site.mjs`
+  - Added validation for `content/videos.json`, local video paths, and video thumbnails.
+
+### Commands Run
+
+```bash
+npm install
+npx next info
+node -v
+npm -v
+npm ls next react react-dom typescript --depth=0
+npm run lint
+npm audit --omit=dev
+NEXT_TELEMETRY_DISABLED=1 npm run build
+NEXT_TELEMETRY_DISABLED=1 npm run dev -- --hostname 127.0.0.1 --port 3002
+curl -I http://127.0.0.1:3002/teaching-videos
+curl -I http://127.0.0.1:3002/videos/teaching-at-vois.mp4
+```
+
+### Final Verification Output
+
+`npm run lint`:
+
+```text
+Site content validation passed.
+```
+
+`npm audit --omit=dev`:
+
+```text
+found 0 vulnerabilities
+```
+
+`NEXT_TELEMETRY_DISABLED=1 npm run build`:
+
+```text
+▲ Next.js 15.5.19
+✓ Compiled successfully in 2.1s
+✓ Generating static pages (16/16)
+└ ○ /teaching-videos                       130 B         102 kB
+```
+
+`NEXT_TELEMETRY_DISABLED=1 npm run dev -- --hostname 127.0.0.1 --port 3002`:
+
+```text
+▲ Next.js 15.5.19
+✓ Ready in 11.6s
+HEAD /teaching-videos 200
+GET /teaching-videos 200
+```
+
+Video asset smoke test:
+
+```text
+HTTP/1.1 200 OK
+Content-Type: video/mp4
+Content-Length: 184669292
+```
+
+### Remaining Warnings
+
+- The build logs still show `Podcast RSS fetch failed; using local fallback episodes. fetch failed` in this sandbox. That fallback is expected and keeps the build independent of Transistor availability.
+- The current local video is 176 MB. It works from `public/videos/` now, but future large videos should use YouTube, Vimeo, Cloudinary, Sanity, or another hosted media service.

@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "teaching-at-vois",
+    "title": "Teaching at VOIS",
+    "description": "A teaching video from Saul Loubassa Bighonda.",
+    "videoUrl": "/videos/teaching-at-vois.mp4",
+    "thumbnailUrl": "/images/site/bs.jpg",
+    "date": "2026-07-02",
+    "category": "Teaching",
+    "tags": ["Teaching", "Sermon", "Reflection"],
+    "duration": "",
+    "featured": true,
+    "visibility": "public"
+  }
+]

@@ -49,6 +49,8 @@ To add a book, copy an existing object, update the values, and give it a unique 
 
 Edit `content/photos.json`.
 
+Future photo uploads can also be managed through `/admin` after Decap CMS is connected. The current build-safe source is `content/photos.json`; CMS-created photo entries should be reviewed and copied into that fallback file until the CMS backend workflow is fully connected and tested.
+
 Place final photo files in:
 
 ```text
@@ -65,6 +67,26 @@ Each photo supports title, location, year, description, alt text, category, tags
 
 If `purchaseUrl` is empty, the site shows a request/inquiry link instead of fake checkout.
 
+## Teaching Videos
+
+The Teaching Videos page is available at `/teaching-videos`.
+
+Local fallback videos are listed in `content/videos.json`. CMS-created video entries can be saved in `content/cms/videos/` after admin setup; keep `content/videos.json` updated as the build-safe fallback source.
+
+Local video files should live in:
+
+```text
+public/videos/
+```
+
+Use public paths in content:
+
+```json
+"/videos/teaching-at-vois.mp4"
+```
+
+The page also supports external YouTube and Vimeo URLs. For future large video files, prefer YouTube, Vimeo, Cloudinary, or another hosted video service instead of storing large files in the repository.
+
 ## Podcast
 
 Edit `content/podcast.json`.
@@ -76,7 +98,7 @@ Update:
 - Apple Podcasts, Spotify, YouTube, Amazon Music, Overcast, and Pocket Casts links
 - latest episode entries
 
-The current site uses editable episode entries. A future version can fetch the RSS feed at build time if desired.
+The site tries to fetch podcast episodes from the Transistor RSS feed at build time. If the RSS fetch fails or times out, it uses local fallback entries from `content/podcast.json`.
 
 ## Booking and event services
 
@@ -197,7 +219,15 @@ Files:
 - `public/admin/index.html`
 - `public/admin/config.yml`
 
-This is optional and does not affect the build. To make it fully functional, connect it to a Git provider and update the backend settings in `public/admin/config.yml`.
+This is optional and does not affect the build. To make it fully functional, connect it to GitHub/Netlify Identity or another compatible Decap backend and update the backend settings in `public/admin/config.yml`.
+
+Decap CMS is configured for:
+
+- Site settings
+- Teaching videos
+- Photography entries
+
+See `CMS_SETUP_GUIDE.md` and `MEDIA_UPLOAD_GUIDE.md`.
 
 ## Deploy
 

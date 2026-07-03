@@ -5,6 +5,7 @@ const footerNav = [
   { label: "Books", href: "/books" },
   { label: "Podcast", href: "/podcast" },
   { label: "Photography", href: "/photography" },
+  { label: "Teaching Videos", href: "/teaching-videos" },
   { label: "Teaching & Events", href: "/teaching-events" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" }

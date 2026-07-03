@@ -3,8 +3,10 @@ backend:
   repo: your-github-username/your-repo-name
   branch: main
 
-media_folder: public/images/uploads
-public_folder: /images/uploads
+publish_mode: editorial_workflow
+
+media_folder: public/uploads
+public_folder: /uploads
 
 collections:
   - name: site
@@ -18,51 +20,57 @@ collections:
           - { label: Owner Name, name: ownerName, widget: string }
           - { label: Tagline, name: tagline, widget: text }
           - { label: Intro, name: intro, widget: text }
+          - { label: SEO Description, name: seoDescription, widget: text }
           - { label: Contact Email, name: contactEmail, widget: string }
           - { label: Booking URL, name: bookingUrl, widget: string, required: false }
-  - name: books
-    label: Books
-    files:
-      - file: content/books.json
-        label: Books
-        name: books
-        fields:
-          - label: Books
-            name: books
-            widget: list
-            fields:
-              - { label: Slug, name: slug, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Subtitle, name: subtitle, widget: string }
-              - { label: Description, name: description, widget: text }
-              - { label: Status, name: status, widget: string }
-              - { label: Year, name: year, widget: string }
-              - { label: Cover Image, name: coverImage, widget: image }
-  - name: podcast
-    label: Podcast
-    files:
-      - file: content/podcast.json
-        label: Podcast
-        name: podcast
-        fields:
-          - { label: Name, name: name, widget: string }
-          - { label: URL, name: url, widget: string }
-          - { label: Description, name: description, widget: text }
-  - name: photos
-    label: Photos
-    files:
-      - file: content/photos.json
-        label: Photos
-        name: photos
-        fields:
-          - label: Photos
-            name: photos
-            widget: list
-            fields:
-              - { label: Slug, name: slug, widget: string }
-              - { label: Title, name: title, widget: string }
-              - { label: Image, name: image, widget: image }
-              - { label: Alt Text, name: alt, widget: string }
-              - { label: Category, name: category, widget: string }
-              - { label: Price, name: price, widget: string, required: false }
-              - { label: Purchase URL, name: purchaseUrl, widget: string, required: false }
+          - { label: Portrait Image, name: portraitImage, widget: image, media_folder: public/uploads/photos, public_folder: /uploads/photos }
+          - { label: Hero Image, name: heroImage, widget: image, media_folder: public/uploads/photos, public_folder: /uploads/photos }
+
+  - name: teaching_videos
+    label: Teaching Videos
+    folder: content/cms/videos
+    create: true
+    format: json
+    extension: json
+    slug: "{{slug}}"
+    media_folder: public/uploads/videos
+    public_folder: /uploads/videos
+    fields:
+      - { label: Slug, name: slug, widget: string, hint: "Lowercase, no spaces, use hyphens." }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Video File or URL, name: videoUrl, widget: file, required: false }
+      - { label: External Video URL, name: externalVideoUrl, widget: string, required: false, hint: "Optional YouTube, Vimeo, or Cloudinary URL. If used, copy it into Video File or URL before publishing." }
+      - { label: Thumbnail, name: thumbnailUrl, widget: image, required: false, media_folder: public/uploads/thumbnails, public_folder: /uploads/thumbnails }
+      - { label: Date, name: date, widget: datetime, required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: Category, name: category, widget: string, default: Teaching }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Duration, name: duration, widget: string, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Visibility, name: visibility, widget: select, options: ["public", "hidden"], default: public }
+
+  - name: photography
+    label: Photography
+    folder: content/cms/photos
+    create: true
+    format: json
+    extension: json
+    slug: "{{slug}}"
+    media_folder: public/uploads/photos
+    public_folder: /uploads/photos
+    fields:
+      - { label: Slug, name: slug, widget: string, hint: "Lowercase, no spaces, use hyphens." }
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Image, name: image, widget: image }
+      - { label: Alt Text, name: alt, widget: string }
+      - { label: Location, name: location, widget: string, required: false }
+      - { label: Year, name: year, widget: string, required: false }
+      - { label: Category, name: category, widget: string, default: Portrait }
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Availability, name: availability, widget: select, options: ["For Sale", "Inquire", "Commission Only", "Not For Sale"], default: Inquire }
+      - { label: Price, name: price, widget: string, required: false }
+      - { label: Print Sizes, name: printSizes, widget: list, required: false }
+      - { label: Purchase URL, name: purchaseUrl, widget: string, required: false }
+      - { label: License Inquiry URL, name: licenseInquiryUrl, widget: string, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false }

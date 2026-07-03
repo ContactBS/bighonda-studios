@@ -5,12 +5,22 @@ import podcastData from "@/content/podcast.json";
 import servicesData from "@/content/services.json";
 import siteData from "@/content/site.json";
 import testimonialsData from "@/content/testimonials.json";
-import type { Book, Faq, Photo, Service, Testimonial } from "./types";
+import videosData from "@/content/videos.json";
+import type { Book, Faq, Photo, Service, TeachingVideo, Testimonial } from "./types";
+
+function normalizeTeachingVideo(video: TeachingVideo): TeachingVideo {
+  return {
+    ...video,
+    videoUrl: video.externalVideoUrl || video.videoUrl,
+    tags: video.tags || []
+  };
+}
 
 export const site = siteData;
 export const podcast = podcastData;
 export const books = (booksData as Book[]).sort((a, b) => a.displayOrder - b.displayOrder);
 export const photos = photosData as Photo[];
+export const teachingVideos = (videosData as TeachingVideo[]).map(normalizeTeachingVideo).filter((video) => video.visibility !== "hidden");
 export const services = servicesData as Service[];
 export const testimonials = testimonialsData as Testimonial[];
 export const faqs = faqsData as Faq[];
