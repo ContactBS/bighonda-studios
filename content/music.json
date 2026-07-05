@@ -1,0 +1,65 @@
+{
+  "artistName": "Be Ye Transformed",
+  "pageTitle": "Music by Saul",
+  "intro": "Written and produced by Saul Loubassa Bighonda, Music by Saul brings together reflective songs shaped by faith, conviction, transformation, identity, and the renewing of the mind.",
+  "aiDisclosure": "Saul writes the lyrics and directs the creative vision behind each release, using AI-assisted voices, vocals, and musical generation as part of the production process.",
+  "spotifyArtistUrl": "https://open.spotify.com/artist/3VAf94I2r5ER901moq1pfu?si=1pSnQjV0Qnie0QeyoNLPXg",
+  "appleMusicArtistUrl": "https://music.apple.com/se/artist/be-ye-transformed/1896163359?l=en-GB",
+  "releases": [
+    {
+      "title": "Latest Release 1",
+      "releaseType": "Editable placeholder",
+      "releaseDate": "",
+      "description": "Replace this placeholder with the real title, release date, cover art, and platform links for one of Saul's most recent releases.",
+      "coverImage": "",
+      "spotifyUrl": "",
+      "appleMusicUrl": "",
+      "featured": true,
+      "order": 1
+    },
+    {
+      "title": "Latest Release 2",
+      "releaseType": "Editable placeholder",
+      "releaseDate": "",
+      "description": "Replace this placeholder with the real title, release date, cover art, and platform links for one of Saul's most recent releases.",
+      "coverImage": "",
+      "spotifyUrl": "",
+      "appleMusicUrl": "",
+      "featured": false,
+      "order": 2
+    },
+    {
+      "title": "Latest Release 3",
+      "releaseType": "Editable placeholder",
+      "releaseDate": "",
+      "description": "Replace this placeholder with the real title, release date, cover art, and platform links for one of Saul's most recent releases.",
+      "coverImage": "",
+      "spotifyUrl": "",
+      "appleMusicUrl": "",
+      "featured": false,
+      "order": 3
+    },
+    {
+      "title": "Latest Release 4",
+      "releaseType": "Editable placeholder",
+      "releaseDate": "",
+      "description": "Replace this placeholder with the real title, release date, cover art, and platform links for one of Saul's most recent releases.",
+      "coverImage": "",
+      "spotifyUrl": "",
+      "appleMusicUrl": "",
+      "featured": false,
+      "order": 4
+    },
+    {
+      "title": "Latest Release 5",
+      "releaseType": "Editable placeholder",
+      "releaseDate": "",
+      "description": "Replace this placeholder with the real title, release date, cover art, and platform links for one of Saul's most recent releases.",
+      "coverImage": "",
+      "spotifyUrl": "",
+      "appleMusicUrl": "",
+      "featured": false,
+      "order": 5
+    }
+  ]
+}

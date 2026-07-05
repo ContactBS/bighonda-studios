@@ -1,18 +1,18 @@
 {
   "brandName": "Bighonda Studios",
   "ownerName": "Saul Loubassa Bighonda",
-  "tagline": "Stories, sermons, photographs, and conversations for the renewing of the mind.",
-  "intro": "Bighonda Studios is the creative home of Saul Loubassa Bighonda - author, podcaster, photographer, and teacher exploring faith, meaning, identity, beauty, and transformation.",
-  "seoDescription": "Welcome to the creative home of Saul Loubassa Bighonda, a writer, podcaster, photographer, teacher, and speaker exploring faith, meaning, identity, beauty, and transformation.",
+  "tagline": "Stories, songs, sermons, photographs, and conversations for the renewing of the mind.",
+  "intro": "Bighonda Studios is the creative home of Saul Loubassa Bighonda - writer, podcaster, photographer, songwriter, music producer, teacher, and speaker exploring faith, meaning, identity, beauty, and transformation.",
+  "seoDescription": "Welcome to the creative home of Saul Loubassa Bighonda, a writer, podcaster, photographer, songwriter, music producer, teacher, and speaker exploring faith, meaning, identity, beauty, and transformation.",
   "contactEmail": "contact@bighondastudios.com",
   "bookingUrl": "",
   "portraitImage": "/images/portraits/saul-bighonda-portrait.png",
   "heroImage": "/images/site/bs.jpg",
   "mission": "To create reflective work that invites people toward truth, beauty, spiritual renewal, and a more honest way of seeing the world.",
-  "aboutBio": "Saul Loubassa Bighonda is the founder of Bighonda Studios - a creative home for writing, podcasting, photography, teaching, and conversations about transformation. Through books, sermons, photographs, and reflective storytelling, Saul explores faith, meaning, belief, identity, beauty, and the renewal of the mind.",
+  "aboutBio": "Saul Loubassa Bighonda is the founder of Bighonda Studios - a creative home for writing, podcasting, photography, music and songwriting, teaching, and conversations about transformation. Through books, songs, sermons, photographs, and reflective storytelling, Saul explores faith, meaning, belief, identity, beauty, and the renewal of the mind.",
   "newsletter": {
     "headline": "Stay close to the work.",
-    "description": "Receive occasional notes on new books, sermons, photographs, essays, and events from Bighonda Studios.",
+    "description": "Receive occasional notes on new books, songs, sermons, photographs, essays, and events from Bighonda Studios.",
     "buttonLabel": "Join the mailing list",
     "url": "mailto:contact@bighondastudios.com?subject=Newsletter%20signup"
   },
@@ -36,10 +36,19 @@
     {
       "label": "YouTube",
       "url": "https://youtube.com/@BeYeTransformed-Podcast"
+    },
+    {
+      "label": "Spotify",
+      "url": "https://open.spotify.com/artist/3VAf94I2r5ER901moq1pfu?si=1pSnQjV0Qnie0QeyoNLPXg"
+    },
+    {
+      "label": "Apple Music",
+      "url": "https://music.apple.com/se/artist/be-ye-transformed/1896163359?l=en-GB"
     }
   ],
   "home": {
     "featuredBookEyebrow": "Featured book",
+    "musicIntro": "Reflective songs written and produced by Saul, shaped by faith, conviction, transformation, and AI-assisted musical production.",
     "photographyIntro": "A quiet visual archive of beauty, place, memory, and attention.",
     "eventsIntro": "Invite Saul for teaching, sermons, workshops, book talks, interviews, and thoughtful community gatherings."
   },
@@ -55,6 +64,10 @@
     {
       "title": "Photography",
       "description": "Images that hold attention on place, beauty, stillness, and the dignity of ordinary life."
+    },
+    {
+      "title": "Music & Songwriting",
+      "description": "Reflective songs and production concepts shaped by faith, transformation, conviction, and creative experimentation."
     },
     {
       "title": "Teaching",

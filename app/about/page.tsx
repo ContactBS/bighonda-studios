@@ -30,7 +30,7 @@ export default function AboutPage() {
       <section className="section-pad bg-bone">
         <div className="content-wrap">
           <SectionHeader eyebrow="Creative Pillars" title="One studio, several faithful forms." />
-          <div className="mt-10 grid gap-5 md:grid-cols-4">
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {site.creativePillars.map((pillar) => (
               <article className="border border-ink/10 bg-paper p-5 shadow-soft" key={pillar.title}>
                 <h2 className="font-serif text-3xl text-ink">{pillar.title}</h2>

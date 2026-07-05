@@ -45,7 +45,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         "@id": `${absoluteUrl()}/#person`,
         name: site.ownerName,
         url: absoluteUrl(),
-        jobTitle: "Writer, podcaster, photographer, teacher, and speaker",
+        jobTitle: "Writer, podcaster, photographer, songwriter, music producer, teacher, and speaker",
         image: absoluteUrl(site.portraitImage),
         sameAs: site.socialLinks.map((link) => link.url)
       },

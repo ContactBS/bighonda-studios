@@ -1,12 +1,13 @@
 import booksData from "@/content/books.json";
 import faqsData from "@/content/faqs.json";
+import musicData from "@/content/music.json";
 import photosData from "@/content/photos.json";
 import podcastData from "@/content/podcast.json";
 import servicesData from "@/content/services.json";
 import siteData from "@/content/site.json";
 import testimonialsData from "@/content/testimonials.json";
 import videosData from "@/content/videos.json";
-import type { Book, Faq, Photo, Service, TeachingVideo, Testimonial } from "./types";
+import type { Book, Faq, MusicContent, MusicRelease, Photo, Service, TeachingVideo, Testimonial } from "./types";
 
 function normalizeTeachingVideo(video: TeachingVideo): TeachingVideo {
   return {
@@ -19,6 +20,7 @@ function normalizeTeachingVideo(video: TeachingVideo): TeachingVideo {
 export const site = siteData;
 export const podcast = podcastData;
 export const books = (booksData as Book[]).sort((a, b) => a.displayOrder - b.displayOrder);
+export const music = musicData as MusicContent;
 export const photos = photosData as Photo[];
 export const teachingVideos = (videosData as TeachingVideo[]).map(normalizeTeachingVideo).filter((video) => video.visibility !== "hidden");
 export const services = servicesData as Service[];
@@ -35,6 +37,17 @@ export function getBookBySlug(slug: string) {
 
 export function getFeaturedPhotos(limit = 3) {
   return photos.filter((photo) => photo.featured).slice(0, limit);
+}
+
+export function getRecentMusicReleases(limit = 5): MusicRelease[] {
+  return [...music.releases]
+    .sort((a, b) => {
+      if (a.releaseDate && b.releaseDate && a.releaseDate !== b.releaseDate) {
+        return b.releaseDate.localeCompare(a.releaseDate);
+      }
+      return a.order - b.order;
+    })
+    .slice(0, limit);
 }
 
 export function getSiteUrl() {

@@ -58,6 +58,28 @@ export type TeachingVideo = {
   visibility: string;
 };
 
+export type MusicRelease = {
+  title: string;
+  releaseType: string;
+  releaseDate: string;
+  description: string;
+  coverImage: string;
+  spotifyUrl: string;
+  appleMusicUrl: string;
+  featured: boolean;
+  order: number;
+};
+
+export type MusicContent = {
+  artistName: string;
+  pageTitle: string;
+  intro: string;
+  aiDisclosure: string;
+  spotifyArtistUrl: string;
+  appleMusicArtistUrl: string;
+  releases: MusicRelease[];
+};
+
 export type Service = {
   title: string;
   shortDescription: string;

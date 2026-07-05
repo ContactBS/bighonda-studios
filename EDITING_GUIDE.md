@@ -87,6 +87,47 @@ Use public paths in content:
 
 The page also supports external YouTube, YouTube Shorts, Vimeo, and direct hosted video URLs such as Cloudinary MP4 links. For large video files, prefer YouTube, Vimeo, Cloudinary, or another hosted video service instead of storing large files in the repository.
 
+## Music by Saul
+
+The Music by Saul page is available at `/music-by-saul`.
+
+Edit the build-safe fallback content in:
+
+```text
+content/music.json
+```
+
+Update:
+
+- `artistName`
+- `intro`
+- `aiDisclosure`
+- `spotifyArtistUrl`
+- `appleMusicArtistUrl`
+- `releases`
+
+Each release supports title, release type, release date, description, cover image, Spotify URL, Apple Music URL, featured status, and order.
+
+If exact release details are not known yet, keep the neutral `Latest Release` placeholders until the real titles and links can be added. Do not fetch Spotify or Apple Music during the build.
+
+Release cover art should live in:
+
+```text
+public/images/music/
+```
+
+or, after CMS setup:
+
+```text
+public/uploads/music/
+```
+
+Use public paths in content:
+
+```json
+"/images/music/example-release-cover.jpg"
+```
+
 ## Podcast
 
 Edit `content/podcast.json`.
@@ -226,6 +267,7 @@ Decap CMS is configured for:
 - Site settings
 - Teaching videos
 - Photography entries
+- Music releases
 
 See `CMS_SETUP_GUIDE.md` and `MEDIA_UPLOAD_GUIDE.md`.
 

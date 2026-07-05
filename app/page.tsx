@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BookCard } from "@/components/BookCard";
 import { ButtonLink } from "@/components/ButtonLink";
 import { SectionHeader } from "@/components/SectionHeader";
-import { books, getFeaturedBook, getFeaturedPhotos, podcast, services, site } from "@/lib/content";
+import { books, getFeaturedBook, getFeaturedPhotos, music, podcast, services, site } from "@/lib/content";
 import { getPodcastEpisodes } from "@/lib/podcast-rss";
 
 export default async function HomePage() {
@@ -22,12 +22,13 @@ export default async function HomePage() {
         <div className="content-wrap relative grid min-h-[82vh] items-end px-5 pb-16 pt-24 md:px-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="max-w-4xl">
             <p className="eyebrow text-bronze">{site.brandName}</p>
-            <p className="mt-5 text-bone/72">{site.ownerName} / Writer, podcaster, photographer, teacher, speaker</p>
+            <p className="mt-5 text-bone/72">{site.ownerName} / Writer, podcaster, photographer, songwriter, music producer, teacher, speaker</p>
             <h1 className="mt-6 font-serif text-5xl leading-[1.02] md:text-7xl lg:text-8xl">{site.tagline}</h1>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-bone/78">{site.intro}</p>
             <div className="mt-10 flex flex-wrap gap-3">
               <ButtonLink href="/books" variant="secondary">Explore Books</ButtonLink>
               <ButtonLink href="/podcast" variant="secondary">Listen to Podcast</ButtonLink>
+              <ButtonLink href="/music-by-saul" variant="secondary">Music by Saul</ButtonLink>
               <ButtonLink href="/teaching-events">Book Saul</ButtonLink>
             </div>
           </div>
@@ -76,6 +77,19 @@ export default async function HomePage() {
       </section>
 
       <section className="section-pad bg-ink text-bone">
+        <div className="content-wrap border-b border-bone/10 pb-12">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="eyebrow text-bronze">Music by Saul</p>
+              <h2 className="mt-3 max-w-2xl font-serif text-4xl leading-tight md:text-6xl">Songs of faith, conviction, and transformation.</h2>
+              <p className="mt-5 max-w-2xl leading-8 text-bone/72">{site.home.musicIntro}</p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <ButtonLink href="/music-by-saul" variant="secondary">Explore Music</ButtonLink>
+              <ButtonLink href={music.spotifyArtistUrl} variant="secondary">Spotify</ButtonLink>
+            </div>
+          </div>
+        </div>
         <div className="content-wrap">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>

@@ -74,3 +74,24 @@ collections:
       - { label: Purchase URL, name: purchaseUrl, widget: string, required: false }
       - { label: License Inquiry URL, name: licenseInquiryUrl, widget: string, required: false }
       - { label: Featured, name: featured, widget: boolean, default: false }
+
+  - name: music_releases
+    label: Music Releases
+    folder: content/cms/music
+    create: true
+    format: json
+    extension: json
+    slug: "{{slug}}"
+    media_folder: public/uploads/music
+    public_folder: /uploads/music
+    fields:
+      - { label: Slug, name: slug, widget: string, hint: "Lowercase, no spaces, use hyphens." }
+      - { label: Title, name: title, widget: string }
+      - { label: Release Type, name: releaseType, widget: string, required: false }
+      - { label: Release Date, name: releaseDate, widget: datetime, required: false, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: Description, name: description, widget: text }
+      - { label: Cover Art, name: coverImage, widget: image, required: false }
+      - { label: Spotify URL, name: spotifyUrl, widget: string, required: false }
+      - { label: Apple Music URL, name: appleMusicUrl, widget: string, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: Order, name: order, widget: number, default: 1 }

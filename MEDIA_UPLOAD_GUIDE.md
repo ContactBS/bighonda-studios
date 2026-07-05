@@ -52,6 +52,20 @@ Example:
 2. Rename it with lowercase letters, no spaces, and hyphens.
 3. Add an entry to `content/photos.json`.
 
+## Add Music Release Cover Art Locally
+
+1. Put the image file in `public/images/music/`.
+2. Rename it with lowercase letters, no spaces, and hyphens.
+3. Add or update the release entry in `content/music.json`.
+
+Example cover path:
+
+```json
+"/images/music/example-release-cover.jpg"
+```
+
+Add Spotify and Apple Music release links in the matching `spotifyUrl` and `appleMusicUrl` fields. The artist-level links live in `spotifyArtistUrl` and `appleMusicArtistUrl`.
+
 ## Future Uploads From Any Device
 
 The site now includes Decap CMS scaffolding at:
@@ -60,13 +74,14 @@ The site now includes Decap CMS scaffolding at:
 /admin
 ```
 
-After CMS setup, Saul can log in from a phone, tablet, or computer to create Teaching Videos and Photography entries.
+After CMS setup, Saul can log in from a phone, tablet, or computer to create Teaching Videos, Photography entries, and Music Releases.
 
 CMS-created draft content can be saved in:
 
 ```text
 content/cms/videos/
 content/cms/photos/
+content/cms/music/
 ```
 
 Uploaded media is saved in:
@@ -75,9 +90,10 @@ Uploaded media is saved in:
 public/uploads/videos/
 public/uploads/photos/
 public/uploads/thumbnails/
+public/uploads/music/
 ```
 
-The current live site uses the local fallback JSON files so the build works without CMS credentials. After the Decap backend is connected, review CMS-created entries and copy approved items into `content/videos.json` or `content/photos.json`, or add a tested CMS sync step.
+The current live site uses the local fallback JSON files so the build works without CMS credentials. After the Decap backend is connected, review CMS-created entries and copy approved items into `content/videos.json`, `content/photos.json`, or `content/music.json`, or add a tested CMS sync step.
 
 ## Strong Recommendation For Future Videos
 

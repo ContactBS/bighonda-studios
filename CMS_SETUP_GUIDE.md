@@ -20,6 +20,7 @@ Configured collections:
 - Site Settings
 - Teaching Videos
 - Photography
+- Music Releases
 
 The CMS is optional. The site still builds from local fallback files if CMS login is not configured.
 
@@ -27,7 +28,7 @@ The CMS is optional. The site still builds from local fallback files if CMS logi
 
 For this static Next.js site, the simplest practical admin path is Decap CMS with a GitHub backend.
 
-This lets Saul log in from a phone, tablet, or computer and create or edit photo/video content. Changes are saved back to the repository as JSON files.
+This lets Saul log in from a phone, tablet, or computer and create or edit photo, video, and music release content. Changes are saved back to the repository as JSON files.
 
 ## What You Need To Do
 
@@ -109,6 +110,30 @@ Recommended workflow:
 
 This keeps the website repository fast and avoids storing very large video files in Git.
 
+## Music Releases
+
+CMS music release entries are saved to:
+
+```text
+content/cms/music/
+```
+
+Uploaded cover art is saved to:
+
+```text
+public/uploads/music/
+```
+
+Music fields include release title, release type, release date, description, cover art, Spotify URL, Apple Music URL, featured status, and order.
+
+The live build-safe fallback is:
+
+```text
+content/music.json
+```
+
+Use `content/music.json` to update the Music by Saul page until the Decap backend and publishing workflow are fully connected.
+
 ## Sanity Alternative
 
 Sanity is a stronger hosted CMS if you want a dedicated media library and login without storing content in Git.
@@ -127,7 +152,7 @@ NEXT_PUBLIC_SANITY_DATASET=production
 SANITY_API_READ_TOKEN=optional-read-token
 ```
 
-6. Create schemas for `teachingVideo`, `photo`, `book`, and `siteSettings`.
+6. Create schemas for `teachingVideo`, `photo`, `musicRelease`, `book`, and `siteSettings`.
 7. Update the Next.js content helpers to fetch from Sanity with a timeout and local fallback.
 
 Sanity is not required for the current build.

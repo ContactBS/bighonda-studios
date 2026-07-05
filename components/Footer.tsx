@@ -4,6 +4,7 @@ import { books, podcast, site } from "@/lib/content";
 const footerNav = [
   { label: "Books", href: "/books" },
   { label: "Podcast", href: "/podcast" },
+  { label: "Music by Saul", href: "/music-by-saul" },
   { label: "Photography", href: "/photography" },
   { label: "Teaching Videos", href: "/teaching-videos" },
   { label: "Teaching & Events", href: "/teaching-events" },

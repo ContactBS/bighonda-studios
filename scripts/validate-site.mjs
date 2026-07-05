@@ -5,6 +5,7 @@ const root = process.cwd();
 const requiredFiles = [
   "content/site.json",
   "content/books.json",
+  "content/music.json",
   "content/podcast.json",
   "content/photos.json",
   "content/videos.json",
@@ -36,6 +37,7 @@ for (const file of requiredFiles) {
 
 const site = readJson("content/site.json");
 const books = readJson("content/books.json");
+const music = readJson("content/music.json");
 const podcast = readJson("content/podcast.json");
 const photos = readJson("content/photos.json");
 const videos = readJson("content/videos.json");
@@ -45,6 +47,9 @@ const forbiddenImagePathPattern = /(iclound|icloud|iCloud Drive|\/Users\/|Docume
 assert(site.brandName === "Bighonda Studios", "site.brandName should be Bighonda Studios");
 assert(site.ownerName === "Saul Loubassa Bighonda", "site.ownerName should be Saul Loubassa Bighonda");
 assert(Array.isArray(books) && books.length >= 2, "content/books.json needs at least two books");
+assert(music.pageTitle === "Music by Saul", "content/music.json should define Music by Saul");
+assert(music.spotifyArtistUrl && music.appleMusicArtistUrl, "Music artist URLs are required");
+assert(Array.isArray(music.releases) && music.releases.length >= 5, "content/music.json needs at least five release entries");
 assert(Array.isArray(photos) && photos.length >= 1, "content/photos.json needs photo entries");
 assert(Array.isArray(videos) && videos.length >= 1, "content/videos.json needs video entries");
 assert(Array.isArray(services) && services.length >= 1, "content/services.json needs service entries");
@@ -65,6 +70,25 @@ for (const photo of photos) {
   assert(photo.image.startsWith("/images/"), `Photo must use a public /images path: ${photo.image}`);
   assert(photo.slug && photo.title && photo.image && photo.alt, `Photo is missing required fields: ${photo.slug || photo.title}`);
   assert(existsSync(join(root, "public", photo.image.replace(/^\//, ""))), `Missing photo image: ${photo.image}`);
+}
+
+for (const release of music.releases) {
+  assert(release.title && release.description, `Music release is missing required fields: ${release.title}`);
+  assert(typeof release.order === "number", `Music release needs numeric order: ${release.title}`);
+  for (const [label, url] of [
+    ["spotifyUrl", release.spotifyUrl],
+    ["appleMusicUrl", release.appleMusicUrl]
+  ]) {
+    if (url) {
+      assert(!forbiddenImagePathPattern.test(url), `Music release ${label} uses a local or unsafe path: ${url}`);
+      assert(url.startsWith("https://"), `Music release ${label} should be an external https URL: ${url}`);
+    }
+  }
+  if (release.coverImage) {
+    assert(!forbiddenImagePathPattern.test(release.coverImage), `Music release cover uses a local or unsafe path: ${release.coverImage}`);
+    assert(release.coverImage.startsWith("/images/") || release.coverImage.startsWith("/uploads/"), `Music release cover must use a public image path: ${release.coverImage}`);
+    assert(existsSync(join(root, "public", release.coverImage.replace(/^\//, ""))), `Missing music release cover: ${release.coverImage}`);
+  }
 }
 
 for (const video of videos) {
