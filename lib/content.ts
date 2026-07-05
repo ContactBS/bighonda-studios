@@ -42,8 +42,10 @@ export function getFeaturedPhotos(limit = 3) {
 export function getRecentMusicReleases(limit = 5): MusicRelease[] {
   return [...music.releases]
     .sort((a, b) => {
-      if (a.releaseDate && b.releaseDate && a.releaseDate !== b.releaseDate) {
-        return b.releaseDate.localeCompare(a.releaseDate);
+      const aTime = Date.parse(a.releaseDate);
+      const bTime = Date.parse(b.releaseDate);
+      if (!Number.isNaN(aTime) && !Number.isNaN(bTime) && aTime !== bTime) {
+        return bTime - aTime;
       }
       return a.order - b.order;
     })

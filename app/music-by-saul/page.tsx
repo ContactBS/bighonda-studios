@@ -73,8 +73,8 @@ export default function MusicBySaulPage() {
         <div className="content-wrap">
           <SectionHeader
             eyebrow="Recent Releases"
-            title="Five editable release slots."
-            description="These entries are build-safe local placeholders until the exact latest Spotify or Apple Music release details are added to content/music.json."
+            title="Recent Releases"
+            description="Explore recent songs written and produced by Saul Loubassa Bighonda."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {releases.map((release) => (
