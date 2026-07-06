@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
+import { normalizeLocale } from "@/lib/i18n-config";
 import { absoluteUrl, site } from "@/lib/content";
 import "./globals.css";
 
@@ -36,7 +37,15 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+type RootLayoutProps = Readonly<{
+  children: React.ReactNode;
+  params: Promise<{
+    locale?: string;
+  }>;
+}>;
+
+export default async function RootLayout({ children, params }: RootLayoutProps) {
+  const locale = normalizeLocale((await params).locale);
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -62,12 +71,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   };
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body>
         <JsonLd data={structuredData} />
-        <Header />
+        <Header locale={locale} />
         <main>{children}</main>
-        <Footer />
+        <Footer locale={locale} />
       </body>
     </html>
   );

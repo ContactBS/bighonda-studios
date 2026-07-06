@@ -1,11 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { defaultLocale, localizedInternalHref, type Locale } from "@/lib/i18n-config";
 
 type ButtonLinkProps = {
   href: string;
   children: ReactNode;
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
+  locale?: Locale;
 };
 
 const variantClass = {
@@ -18,7 +20,8 @@ export function ButtonLink({
   href,
   children,
   variant = "primary",
-  className = ""
+  className = "",
+  locale = defaultLocale
 }: ButtonLinkProps) {
   const isExternal = href.startsWith("http") || href.startsWith("mailto:");
   const classes = `inline-flex min-h-11 items-center justify-center rounded-sm px-5 py-3 text-sm font-semibold transition ${variantClass[variant]} ${className}`;
@@ -32,7 +35,7 @@ export function ButtonLink({
   }
 
   return (
-    <Link className={classes} href={href}>
+    <Link className={classes} href={localizedInternalHref(href, locale)}>
       {children}
     </Link>
   );

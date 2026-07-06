@@ -1,0 +1,238 @@
+{
+  "site": {
+    "tagline": "Histoires, chants, prédications, photographies et conversations pour le renouvellement de l'intelligence.",
+    "intro": "Bighonda Studios est la maison créative de Saul Loubassa Bighonda - écrivain, podcasteur, photographe, auteur-compositeur, producteur musical, enseignant et conférencier explorant la foi, le sens, l'identité, la beauté et la transformation.",
+    "seoDescription": "Bienvenue dans la maison créative de Saul Loubassa Bighonda, écrivain, podcasteur, photographe, auteur-compositeur, producteur musical, enseignant et conférencier explorant la foi, le sens, l'identité, la beauté et la transformation.",
+    "mission": "Créer une oeuvre réfléchie qui invite les personnes vers la vérité, la beauté, le renouvellement spirituel et une manière plus honnête de voir le monde.",
+    "aboutBio": "Saul Loubassa Bighonda est le fondateur de Bighonda Studios - une maison créative pour l'écriture, le podcast, la photographie, la musique, l'enseignement et les conversations sur la transformation. À travers livres, chants, prédications, photographies et récits méditatifs, Saul explore la foi, le sens, la croyance, l'identité, la beauté et le renouvellement de l'intelligence.",
+    "newsletter": {
+      "headline": "Restez proche de l'oeuvre.",
+      "description": "Recevez parfois des nouvelles des livres, chants, prédications, photographies, essais et événements de Bighonda Studios.",
+      "buttonLabel": "Rejoindre la liste de diffusion"
+    },
+    "home": {
+      "featuredBookEyebrow": "Livre en vedette",
+      "musicIntro": "Des chants réfléchis écrits et produits par Saul, façonnés par la foi, la conviction, la transformation et une production musicale assistée par IA.",
+      "photographyIntro": "Une archive visuelle calme de beauté, de lieux, de mémoire et d'attention.",
+      "eventsIntro": "Invitez Saul pour des enseignements, prédications, ateliers, rencontres autour des livres, interviews et rassemblements communautaires réfléchis."
+    },
+    "creativePillars": [
+      {
+        "title": "Écriture",
+        "description": "Livres et essais façonnés par la foi, le doute, la paternité, l'identité et la recherche de sens."
+      },
+      {
+        "title": "Podcast",
+        "description": "Courtes prédications et conversations réfléchies pour aider les auditeurs à renouveler leur intelligence."
+      },
+      {
+        "title": "Photographie",
+        "description": "Des images qui attirent l'attention sur les lieux, la beauté, le calme et la dignité de la vie ordinaire."
+      },
+      {
+        "title": "Musique & écriture de chants",
+        "description": "Chants réfléchis et concepts de production façonnés par la foi, la transformation, la conviction et l'expérimentation créative."
+      },
+      {
+        "title": "Enseignement",
+        "description": "Sessions claires et ancrées pour églises, communautés, écoles, interviews et rencontres créatives."
+      }
+    ]
+  },
+  "books": [
+    {
+      "slug": "what-if-you-were-wrong",
+      "subtitle": "Une conversation honnête sur la croyance, la certitude et ce qui est en jeu",
+      "status": "Publié",
+      "genre": "Foi et philosophie",
+      "format": "E-book et imprimé",
+      "description": "WHAT IF YOU WERE WRONG? n'est pas une accusation. C'est une invitation. À travers des conversations honnêtes avec des athées, des chrétiens et des personnes d'autres confessions, Saul Loubassa Bighonda explore la croyance, la certitude, le doute, le sens, Dieu et les risques discrets que nous prenons dans ce que nous choisissons de croire.",
+      "highlight": "Pas une accusation. Une invitation à une conversation honnête sur la croyance, la certitude et ce qui est en jeu.",
+      "topics": ["croyance", "doute", "Dieu", "sens", "certitude", "conversations sur la foi"],
+      "related": {
+        "podcast": "Utilisez ce livre comme point de départ pour des conversations sur la croyance, le doute et l'intelligence renouvelée.",
+        "events": "Invitez Saul pour une rencontre autour du livre, une conversation sur la foi ou une séance de questions-réponses."
+      }
+    },
+    {
+      "slug": "dear-son-welcome-to-life",
+      "title": "Cher fils, bienvenue dans la vie",
+      "subtitle": "Une orientation à la vie sur terre, d'un père à son fils",
+      "status": "Publié",
+      "genre": "Paternité et formation spirituelle",
+      "format": "E-book et imprimé",
+      "description": "Une orientation paternelle à la vie sur terre, écrite à partir des réflexions de Saul sur l'identité, le but, la foi, le gouvernement, la maîtrise de soi, la repentance et la transformation par une intelligence renouvelée.",
+      "highlight": "Une orientation paternelle à la vie, écrite pour un fils et utile à toute personne apprenant à porter un but avec humilité.",
+      "topics": ["paternité", "identité", "but", "repentance", "maîtrise de soi", "intelligence renouvelée"],
+      "related": {
+        "podcast": "Associez ce livre à des prédications sur l'identité, la repentance et la transformation.",
+        "events": "Invitez Saul pour une session sur la paternité, le mentorat ou le sens de la vocation."
+      }
+    },
+    {
+      "slug": "even-science-agrees",
+      "title": "Même la science est d'accord",
+      "subtitle": "Pourquoi la Bible dit non et ce que cela fait à votre esprit et à votre corps",
+      "status": "Bientôt disponible",
+      "genre": "Réflexion spirituelle",
+      "format": "À confirmer",
+      "description": "Un éclairage sur les raisons bibliques derrière les interdits de Dieu.",
+      "highlight": "Une sagesse biblique pour comprendre l'obéissance, la protection et le dessein de Dieu pour la vie chrétienne.",
+      "topics": ["Sagesse biblique", "Foi", "Obéissance", "Dessein de Dieu", "Vie chrétienne"],
+      "related": {
+        "podcast": "Ajoutez ici des notes de podcast liées.",
+        "events": "Ajoutez ici des idées de réservation liées."
+      }
+    }
+  ],
+  "podcast": {
+    "description": "De courtes prédications faciles à écouter pour aider les auditeurs à ne pas se conformer au modèle de ce monde, mais à être transformés par le renouvellement de l'intelligence.",
+    "episodes": [
+      {
+        "title": "Le renouvellement de l'intelligence",
+        "description": "Une courte prédication sur le fait d'être transformé plutôt que modelé par les systèmes qui nous entourent."
+      },
+      {
+        "title": "Ce que nous choisissons de croire",
+        "description": "Un épisode méditatif sur la croyance, la certitude, le doute et les enjeux discrets d'une vision du monde."
+      },
+      {
+        "title": "L'identité avant l'activité",
+        "description": "Un court enseignement sur l'identité, le but et l'apprentissage d'une action issue d'une vie intérieure renouvelée."
+      }
+    ]
+  },
+  "music": {
+    "pageTitle": "Musique par Saul",
+    "intro": "Écrite et produite par Saul Loubassa Bighonda, la musique de Saul rassemble des chants réfléchis façonnés par la foi, la conviction, la transformation, l'identité et le renouvellement de l'intelligence.",
+    "aiDisclosure": "Saul écrit les paroles et dirige la vision créative de chaque sortie, en utilisant des voix, vocaux et générations musicales assistés par IA dans le processus de production.",
+    "releases": [
+      {
+        "title": "Let Your Kingdom Come!",
+        "releaseType": "Single",
+        "description": "Inspiré de la prière du Seigneur dans Matthieu 6:5-15."
+      },
+      {
+        "title": "We Believe In God",
+        "releaseType": "Single",
+        "description": "La déclaration chrétienne de foi. Inspirée du symbole des apôtres."
+      },
+      {
+        "title": "Mercy Ships Song",
+        "releaseType": "Single",
+        "description": "Pour l'une de mes ONG préférées, Mercy Ships."
+      },
+      {
+        "title": "Trust In The Lord",
+        "releaseType": "Single",
+        "description": "Inspiré des Psaumes."
+      },
+      {
+        "title": "Yeshua HaMashiach",
+        "releaseType": "Single",
+        "description": "Le nom au-dessus de tout nom. Le seul nom par lequel les péchés sont pardonnés et par lequel nous sommes sauvés."
+      }
+    ]
+  },
+  "photos": [
+    {
+      "slug": "photography-01",
+      "title": "Étude de portrait I",
+      "location": "Archive photographique",
+      "description": "Un portrait issu des archives photographiques de Saul.",
+      "alt": "Portrait photographique des archives de Saul Loubassa Bighonda.",
+      "category": "Portrait",
+      "availability": "Sur demande",
+      "price": "Sur demande",
+      "printSizes": ["Licence numérique", "Demande de tirage"]
+    },
+    {
+      "slug": "photography-02",
+      "title": "Étude de portrait II",
+      "location": "Archive photographique",
+      "description": "Un portrait issu des archives photographiques de Saul.",
+      "alt": "Portrait vertical des archives photographiques de Saul Loubassa Bighonda.",
+      "category": "Portrait",
+      "availability": "Sur demande",
+      "price": "Sur demande",
+      "printSizes": ["Licence numérique", "Demande de tirage"]
+    },
+    {
+      "slug": "photography-03",
+      "title": "Portrait en bibliothèque",
+      "location": "Archive photographique",
+      "description": "Un portrait issu des archives photographiques de Saul.",
+      "alt": "Portrait en bibliothèque issu des archives photographiques de Saul Loubassa Bighonda.",
+      "category": "Portrait",
+      "availability": "Sur demande",
+      "price": "Sur demande",
+      "printSizes": ["Licence numérique", "Demande de tirage"]
+    },
+    {
+      "slug": "photography-04",
+      "title": "Portrait en studio",
+      "location": "Archive photographique",
+      "description": "Un portrait issu des archives photographiques de Saul.",
+      "alt": "Portrait en studio issu des archives photographiques de Saul Loubassa Bighonda.",
+      "category": "Portrait",
+      "availability": "Sur demande",
+      "price": "Sur demande",
+      "printSizes": ["Licence numérique", "Demande de tirage"]
+    }
+  ],
+  "services": [
+    {
+      "title": "Enseignements & prédications",
+      "shortDescription": "Un enseignement clair et réfléchi pour églises, petits groupes, écoles et espaces communautaires.",
+      "idealAudience": "Églises, ministères, écoles, communautés de foi",
+      "topics": ["renouvellement de l'intelligence", "foi et culture", "identité", "repentance", "formation spirituelle"],
+      "format": "Présentiel / En ligne / Hybride",
+      "duration": "30-60 minutes, séries possibles",
+      "bookingCta": "Inviter Saul à enseigner"
+    },
+    {
+      "title": "Rencontres autour des livres",
+      "shortDescription": "Conférences guidées et questions-réponses autour des livres de Saul, y compris la croyance, la paternité, l'identité et la transformation.",
+      "idealAudience": "Clubs de lecture, églises, écoles, bibliothèques, groupes de discussion",
+      "topics": ["WHAT IF YOU WERE WRONG?", "Cher fils, bienvenue dans la vie", "croyance", "paternité", "but"],
+      "format": "Présentiel / En ligne / Hybride",
+      "duration": "45-90 minutes",
+      "bookingCta": "Demander une rencontre autour d'un livre"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "teaching-at-vois",
+      "title": "Enseignement à VOIS",
+      "description": "Une vidéo d'enseignement de Saul Loubassa Bighonda.",
+      "category": "Enseignement",
+      "tags": ["Enseignement", "Prédication", "Réflexion"]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Saul peut-il intervenir dans des églises et événements communautaires ?",
+      "answer": "Oui. Utilisez la page Enseignement & événements pour demander des prédications, ateliers, rencontres autour des livres, interviews et rassemblements sur mesure."
+    },
+    {
+      "question": "Les tirages photo sont-ils disponibles à l'achat ?",
+      "answer": "Oui. Chaque photo peut inclure un lien d'achat, un prix, des formats de tirage et un lien de demande de licence."
+    },
+    {
+      "question": "Comment les épisodes du podcast sont-ils mis à jour ?",
+      "answer": "Modifiez content/podcast.json. Le site est prêt pour des entrées manuelles et peut ensuite être relié à une récupération RSS au moment de la génération."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Saul apporte une combinaison rare de conviction, de douceur et de clarté aux questions difficiles.",
+      "name": "Hôte communautaire",
+      "role": "Organisateur d'événement"
+    },
+    {
+      "quote": "Son travail crée un espace pour une réflexion honnête sans perdre l'espérance.",
+      "name": "Lecteur",
+      "role": "Participant à un groupe de lecture"
+    }
+  ]
+}

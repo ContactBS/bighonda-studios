@@ -2,21 +2,24 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
+import { defaultLocale, type Locale, ui } from "@/lib/i18n-config";
 import type { Photo } from "@/lib/types";
 
 type PhotoGalleryProps = {
   photos: Photo[];
+  locale?: Locale;
 };
 
-export function PhotoGallery({ photos }: PhotoGalleryProps) {
-  const categories = useMemo(() => ["All", ...Array.from(new Set(photos.map((photo) => photo.category)))], [photos]);
-  const [activeCategory, setActiveCategory] = useState("All");
+export function PhotoGallery({ photos, locale = defaultLocale }: PhotoGalleryProps) {
+  const labels = ui[locale].photoGallery;
+  const categories = useMemo(() => [labels.all, ...Array.from(new Set(photos.map((photo) => photo.category)))], [labels.all, photos]);
+  const [activeCategory, setActiveCategory] = useState<string>(labels.all);
   const [selected, setSelected] = useState<Photo | null>(null);
-  const visiblePhotos = activeCategory === "All" ? photos : photos.filter((photo) => photo.category === activeCategory);
+  const visiblePhotos = activeCategory === labels.all ? photos : photos.filter((photo) => photo.category === activeCategory);
 
   return (
     <>
-      <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filter photographs by category">
+      <div className="flex flex-wrap gap-2" role="tablist" aria-label={labels.filterLabel}>
         {categories.map((category) => (
           <button
             aria-selected={activeCategory === category}
@@ -45,13 +48,14 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
           </article>
         ))}
       </div>
-      {selected ? <PhotoModal photo={selected} onClose={() => setSelected(null)} /> : null}
+      {selected ? <PhotoModal locale={locale} photo={selected} onClose={() => setSelected(null)} /> : null}
     </>
   );
 }
 
-function PhotoModal({ photo, onClose }: { photo: Photo; onClose: () => void }) {
-  const purchaseLabel = photo.purchaseUrl ? "Buy Print" : "Request Print";
+function PhotoModal({ photo, onClose, locale }: { photo: Photo; onClose: () => void; locale: Locale }) {
+  const labels = ui[locale].photoGallery;
+  const purchaseLabel = photo.purchaseUrl ? labels.buyPrint : labels.requestPrint;
   const purchaseHref = photo.purchaseUrl || `mailto:hello@bighondastudios.com?subject=${encodeURIComponent(`Print request: ${photo.title}`)}`;
 
   return (
@@ -67,23 +71,23 @@ function PhotoModal({ photo, onClose }: { photo: Photo; onClose: () => void }) {
                 <p className="eyebrow">{photo.category}</p>
                 <h3 className="mt-3 font-serif text-4xl text-ink">{photo.title}</h3>
               </div>
-              <button aria-label="Close photo details" className="rounded-sm border border-ink/20 px-3 py-2 text-sm font-semibold text-ink hover:border-bronze" onClick={onClose} type="button">
-                Close
+              <button aria-label={labels.closeDetails} className="rounded-sm border border-ink/20 px-3 py-2 text-sm font-semibold text-ink hover:border-bronze" onClick={onClose} type="button">
+                {labels.close}
               </button>
             </div>
             <p className="mt-5 leading-8 text-ink/72">{photo.description}</p>
             <dl className="mt-7 grid gap-4 text-sm text-ink/72">
-              <div><dt className="font-semibold text-ink">Location</dt><dd>{photo.location}</dd></div>
-              <div><dt className="font-semibold text-ink">Availability</dt><dd>{photo.availability}</dd></div>
-              <div><dt className="font-semibold text-ink">Price</dt><dd>{photo.price || "Inquire"}</dd></div>
-              <div><dt className="font-semibold text-ink">Print sizes</dt><dd>{photo.printSizes.join(", ")}</dd></div>
+              <div><dt className="font-semibold text-ink">{labels.location}</dt><dd>{photo.location}</dd></div>
+              <div><dt className="font-semibold text-ink">{labels.availability}</dt><dd>{photo.availability}</dd></div>
+              <div><dt className="font-semibold text-ink">{labels.price}</dt><dd>{photo.price || labels.inquire}</dd></div>
+              <div><dt className="font-semibold text-ink">{labels.printSizes}</dt><dd>{photo.printSizes.join(", ")}</dd></div>
             </dl>
             <div className="mt-8 flex flex-wrap gap-3">
               <a className="inline-flex min-h-11 items-center rounded-sm bg-ink px-5 py-3 text-sm font-semibold text-bone transition hover:bg-clay" href={purchaseHref}>
                 {purchaseLabel}
               </a>
               <a className="inline-flex min-h-11 items-center rounded-sm border border-ink/20 bg-bone px-5 py-3 text-sm font-semibold text-ink transition hover:border-bronze hover:text-clay" href={photo.licenseInquiryUrl}>
-                License This Photo
+                {labels.licensePhoto}
               </a>
             </div>
           </div>

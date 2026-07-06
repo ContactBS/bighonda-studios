@@ -1,0 +1,238 @@
+{
+  "site": {
+    "tagline": "Berättelser, sånger, predikningar, fotografier och samtal för sinnets förnyelse.",
+    "intro": "Bighonda Studios är det kreativa hemmet för Saul Loubassa Bighonda - författare, poddare, fotograf, låtskrivare, musikproducent, lärare och talare som utforskar tro, mening, identitet, skönhet och förvandling.",
+    "seoDescription": "Välkommen till det kreativa hemmet för Saul Loubassa Bighonda, en författare, poddare, fotograf, låtskrivare, musikproducent, lärare och talare som utforskar tro, mening, identitet, skönhet och förvandling.",
+    "mission": "Att skapa reflekterande arbete som bjuder människor mot sanning, skönhet, andlig förnyelse och ett ärligare sätt att se världen.",
+    "aboutBio": "Saul Loubassa Bighonda är grundare av Bighonda Studios - ett kreativt hem för skrivande, podcasting, fotografi, musik och låtskrivande, undervisning och samtal om förvandling. Genom böcker, sånger, predikningar, fotografier och reflekterande berättande utforskar Saul tro, mening, övertygelse, identitet, skönhet och sinnets förnyelse.",
+    "newsletter": {
+      "headline": "Håll dig nära arbetet.",
+      "description": "Få ibland nyheter om böcker, sånger, predikningar, fotografier, essäer och event från Bighonda Studios.",
+      "buttonLabel": "Gå med i utskickslistan"
+    },
+    "home": {
+      "featuredBookEyebrow": "Utvald bok",
+      "musicIntro": "Reflekterande sånger skrivna och producerade av Saul, formade av tro, övertygelse, förvandling och AI-assisterad musikproduktion.",
+      "photographyIntro": "Ett stillsamt visuellt arkiv av skönhet, plats, minne och uppmärksamhet.",
+      "eventsIntro": "Bjud in Saul för undervisning, predikningar, workshops, boksamtal, intervjuer och eftertänksamma gemenskapsträffar."
+    },
+    "creativePillars": [
+      {
+        "title": "Skrivande",
+        "description": "Böcker och essäer formade av tro, tvivel, faderskap, identitet och sökandet efter mening."
+      },
+      {
+        "title": "Podcasting",
+        "description": "Korta predikningar och reflekterande samtal som hjälper lyssnare att förnya sinnet."
+      },
+      {
+        "title": "Fotografi",
+        "description": "Bilder som riktar uppmärksamheten mot plats, skönhet, stillhet och värdigheten i det vanliga livet."
+      },
+      {
+        "title": "Musik & låtskrivande",
+        "description": "Reflekterande sånger och produktionsidéer formade av tro, förvandling, övertygelse och kreativt experimenterande."
+      },
+      {
+        "title": "Undervisning",
+        "description": "Tydliga, jordnära sessioner för kyrkor, communities, skolor, intervjuer och kreativa samlingar."
+      }
+    ]
+  },
+  "books": [
+    {
+      "slug": "what-if-you-were-wrong",
+      "subtitle": "Ett ärligt samtal om tro, visshet och vad som står på spel",
+      "status": "Publicerad",
+      "genre": "Tro och filosofi",
+      "format": "E-bok och tryck",
+      "description": "WHAT IF YOU WERE WRONG? är inte en anklagelse. Det är en inbjudan. Genom ärliga, sökande samtal med ateister, kristna och människor från andra trosriktningar utforskar Saul Loubassa Bighonda tro, visshet, tvivel, mening, Gud och de stillsamma risker vi tar i det vi väljer att tro.",
+      "highlight": "Inte en anklagelse. En inbjudan till ett ärligt samtal om tro, visshet och vad som står på spel.",
+      "topics": ["tro", "tvivel", "Gud", "mening", "visshet", "trossamtal"],
+      "related": {
+        "podcast": "Använd den här boken som utgångspunkt för samtal om tro, tvivel och det förnyade sinnet.",
+        "events": "Bjud in Saul till ett boksamtal, ett trossamtal eller ett modererat frågeforum."
+      }
+    },
+    {
+      "slug": "dear-son-welcome-to-life",
+      "title": "Käre son, välkommen till livet",
+      "subtitle": "En vägledning till livet på jorden från en far till hans son",
+      "status": "Publicerad",
+      "genre": "Faderskap och andlig formation",
+      "format": "E-bok och tryck",
+      "description": "En faderlig vägledning till livet på jorden, skriven utifrån Sauls reflektioner om identitet, syfte, tro, styre, självledarskap, omvändelse och förvandling genom ett förnyat sinne.",
+      "highlight": "En faderlig vägledning till livet, skriven för en son och användbar för alla som lär sig bära syfte med ödmjukhet.",
+      "topics": ["faderskap", "identitet", "syfte", "omvändelse", "självledarskap", "förnyat sinne"],
+      "related": {
+        "podcast": "Koppla den här boken till predikningar om identitet, omvändelse och förvandling.",
+        "events": "Bjud in Saul till en session om faderskap, mentorskap eller syfte."
+      }
+    },
+    {
+      "slug": "even-science-agrees",
+      "title": "Även vetenskapen håller med",
+      "subtitle": "Varför Bibeln säger nej och vad det gör med ditt sinne och din kropp",
+      "status": "Kommer snart",
+      "genre": "Andlig reflektion",
+      "format": "Ej fastställt",
+      "description": "Få insikt i de bibliska skälen bakom Guds förbud.",
+      "highlight": "Biblisk vishet för att förstå lydnad, beskydd och Guds design för kristet liv.",
+      "topics": ["Biblisk vishet", "Tro", "Lydnad", "Guds design", "Kristet liv"],
+      "related": {
+        "podcast": "Lägg till relaterade podcastanteckningar här.",
+        "events": "Lägg till relaterade bokningsidéer här."
+      }
+    }
+  ],
+  "podcast": {
+    "description": "Korta och lättillgängliga predikningar som hjälper lyssnare att inte formas efter världens mönster och system, utan förvandlas genom sinnets förnyelse.",
+    "episodes": [
+      {
+        "title": "Sinnets förnyelse",
+        "description": "En kort predikan om att bli förvandlad i stället för formad av systemen runt omkring oss."
+      },
+      {
+        "title": "Vad vi väljer att tro",
+        "description": "Ett reflekterande avsnitt om tro, visshet, tvivel och de stillsamma insatserna i en världsbild."
+      },
+      {
+        "title": "Identitet före aktivitet",
+        "description": "En kort undervisning om identitet, syfte och att lära sig röra sig från ett förnyat inre liv."
+      }
+    ]
+  },
+  "music": {
+    "pageTitle": "Musik av Saul",
+    "intro": "Skriven och producerad av Saul Loubassa Bighonda samlar Musik av Saul reflekterande sånger formade av tro, övertygelse, förvandling, identitet och sinnets förnyelse.",
+    "aiDisclosure": "Saul skriver texterna och leder den kreativa visionen bakom varje släpp, med AI-assisterade röster, sång och musikalisk generering som en del av produktionen.",
+    "releases": [
+      {
+        "title": "Let Your Kingdom Come!",
+        "releaseType": "Singel",
+        "description": "Inspirerad av Herrens bön i Matteus 6:5-15."
+      },
+      {
+        "title": "We Believe In God",
+        "releaseType": "Singel",
+        "description": "Den kristna trosbekännelsen. Inspirerad av den apostoliska trosbekännelsen."
+      },
+      {
+        "title": "Mercy Ships Song",
+        "releaseType": "Singel",
+        "description": "För en av mina favoritorganisationer, Mercy Ships."
+      },
+      {
+        "title": "Trust In The Lord",
+        "releaseType": "Singel",
+        "description": "Inspirerad av Psaltaren."
+      },
+      {
+        "title": "Yeshua HaMashiach",
+        "releaseType": "Singel",
+        "description": "Namnet över alla namn. Det enda namn genom vilket synder förlåts och genom vilket vi blir frälsta."
+      }
+    ]
+  },
+  "photos": [
+    {
+      "slug": "photography-01",
+      "title": "Porträttstudie I",
+      "location": "Fotografiarkiv",
+      "description": "Ett porträtt från Sauls fotografiarkiv.",
+      "alt": "Porträttfoto från Saul Loubassa Bighondas fotografiarkiv.",
+      "category": "Porträtt",
+      "availability": "På förfrågan",
+      "price": "På förfrågan",
+      "printSizes": ["Digital licens", "Printförfrågan"]
+    },
+    {
+      "slug": "photography-02",
+      "title": "Porträttstudie II",
+      "location": "Fotografiarkiv",
+      "description": "Ett porträtt från Sauls fotografiarkiv.",
+      "alt": "Vertikalt porträttfoto från Saul Loubassa Bighondas fotografiarkiv.",
+      "category": "Porträtt",
+      "availability": "På förfrågan",
+      "price": "På förfrågan",
+      "printSizes": ["Digital licens", "Printförfrågan"]
+    },
+    {
+      "slug": "photography-03",
+      "title": "Biblioteksporträtt",
+      "location": "Fotografiarkiv",
+      "description": "Ett porträtt från Sauls fotografiarkiv.",
+      "alt": "Biblioteksporträtt från Saul Loubassa Bighondas fotografiarkiv.",
+      "category": "Porträtt",
+      "availability": "På förfrågan",
+      "price": "På förfrågan",
+      "printSizes": ["Digital licens", "Printförfrågan"]
+    },
+    {
+      "slug": "photography-04",
+      "title": "Studioporträtt",
+      "location": "Fotografiarkiv",
+      "description": "Ett porträtt från Sauls fotografiarkiv.",
+      "alt": "Studioporträtt från Saul Loubassa Bighondas fotografiarkiv.",
+      "category": "Porträtt",
+      "availability": "På förfrågan",
+      "price": "På förfrågan",
+      "printSizes": ["Digital licens", "Printförfrågan"]
+    }
+  ],
+  "services": [
+    {
+      "title": "Undervisning & predikningar",
+      "shortDescription": "Tydlig, reflekterande undervisning för kyrkor, smågrupper, skolor och communitysammanhang.",
+      "idealAudience": "Kyrkor, tjänster, skolor, trosgemenskaper",
+      "topics": ["sinnets förnyelse", "tro och kultur", "identitet", "omvändelse", "andlig formation"],
+      "format": "På plats / Online / Hybrid",
+      "duration": "30-60 minuter, serier möjliga",
+      "bookingCta": "Bjud in Saul att undervisa"
+    },
+    {
+      "title": "Boksamtal",
+      "shortDescription": "Guidade samtal och frågor och svar kring Sauls böcker, inklusive tro, faderskap, identitet och förvandling.",
+      "idealAudience": "Bokklubbar, kyrkor, skolor, bibliotek, samtalsgrupper",
+      "topics": ["WHAT IF YOU WERE WRONG?", "Käre son, välkommen till livet", "tro", "faderskap", "syfte"],
+      "format": "På plats / Online / Hybrid",
+      "duration": "45-90 minuter",
+      "bookingCta": "Be om ett boksamtal"
+    }
+  ],
+  "videos": [
+    {
+      "slug": "teaching-at-vois",
+      "title": "Undervisning på VOIS",
+      "description": "En undervisningsvideo från Saul Loubassa Bighonda.",
+      "category": "Undervisning",
+      "tags": ["Undervisning", "Predikan", "Reflektion"]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Kan Saul tala i kyrkor och på communityevent?",
+      "answer": "Ja. Använd sidan Undervisning & event för att be om predikningar, workshops, boksamtal, intervjuer och skräddarsydda samlingar."
+    },
+    {
+      "question": "Finns fotografiprints att köpa?",
+      "answer": "Ja. Varje foto kan innehålla köplänk, pris, printstorlekar och länk för licensförfrågan."
+    },
+    {
+      "question": "Hur uppdateras podcastavsnitten?",
+      "answer": "Redigera content/podcast.json. Webbplatsen är redo för manuella avsnitt och kan senare kopplas till RSS-hämtning vid build."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Saul har en sällsynt kombination av övertygelse, mildhet och klarhet i svåra frågor.",
+      "name": "Communityvärd",
+      "role": "Eventarrangör"
+    },
+    {
+      "quote": "Hans arbete skapar utrymme för ärlig reflektion utan att förlora hoppet.",
+      "name": "Läsare",
+      "role": "Deltagare i boksamtal"
+    }
+  ]
+}

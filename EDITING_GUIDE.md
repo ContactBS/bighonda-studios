@@ -20,6 +20,21 @@ Important fields:
 - `portraitImage`
 - `heroImage`
 
+## Translations
+
+English is the default source content in `content/*.json`.
+
+French and Swedish translation overlays live in:
+
+```text
+content/locales/fr/content.json
+content/locales/sv/content.json
+```
+
+Translated pages are available at `/fr/...` and `/sv/...`, for example `/fr/books` and `/sv/music-by-saul`. If a translated field is missing, the site falls back to the English value instead of crashing.
+
+For full instructions, see `TRANSLATION_GUIDE.md`.
+
 ## Books
 
 Edit `content/books.json`.
