@@ -198,13 +198,13 @@
         "sections": [
           { "heading": "What cookies are", "body": "Cookies and similar technologies are small files or browser storage entries used to remember settings, support security, measure usage, or enable embedded services." },
           { "heading": "Who operates the website", "body": "The website is currently operated by Saul Loubassa Bighonda under the Bighonda Studios name while registration is pending." },
-          { "heading": "Necessary cookies", "body": "The site may store a minimal consent preference so it can remember whether optional media cookies are accepted or rejected. This is necessary to respect your choice." },
+          { "heading": "Necessary cookies", "body": "The site stores one minimal localStorage item named bighonda-cookie-consent so it can remember cookie choices. The item includes the consent version, accepted categories, and update timestamp. It does not store personal information." },
           { "heading": "Preferences", "body": "Language is route-based rather than stored as a cookie. Future preference cookies should be added to this policy before activation." },
           { "heading": "Analytics", "body": "No active analytics provider was found in the project during this audit. If analytics are added later, this policy and the consent controls should be updated first." },
-          { "heading": "Embedded media and third-party cookies", "body": "YouTube and Spotify embeds are optional media. They are not loaded until media cookies are accepted or the visitor chooses to load them. Loading an external player may send information to that provider." },
+          { "heading": "Embedded media and third-party cookies", "body": "YouTube and Spotify embeds are optional embedded media. They are not loaded until embedded media cookies are accepted or the visitor chooses to allow embedded media. Loading an external player may send information to that provider." },
           { "heading": "Cookie duration", "body": "The local consent choice is stored for up to 180 days unless you clear browser storage or change your cookie settings." },
           { "heading": "Legal basis", "body": "Necessary storage is used for legitimate interests in running a compliant website. Optional media cookies are based on consent where required." },
-          { "heading": "Accept, reject, or change choices", "body": "The cookie interface offers Accept all, Reject non-essential, and Manage preferences. You can change your choice later through the Cookie settings link in the footer." },
+          { "heading": "Accept, reject, or change choices", "body": "The cookie interface offers Accept all, Reject non-essential, and Manage preferences. Necessary storage remains enabled. You can change or withdraw your choice later through the Cookie settings link in the footer." },
           { "heading": "Browser controls", "body": "You can also block or delete cookies in your browser settings, although some features may work differently." },
           { "heading": "Policy updates", "body": "This policy should be updated when new cookies, analytics, embeds, CMS authentication, or marketing tools are added." },
           { "heading": "Contact", "body": "Cookie questions may be sent to contact@bighondastudios.com." }
@@ -216,13 +216,13 @@
         "sections": [
           { "heading": "Ce que sont les cookies", "body": "Les cookies et technologies similaires sont de petits fichiers ou entrées de stockage du navigateur utilisés pour mémoriser des réglages, soutenir la sécurité, mesurer l'usage ou activer des services intégrés." },
           { "heading": "Exploitant du site", "body": "Le site est actuellement exploité par Saul Loubassa Bighonda sous le nom Bighonda Studios pendant que l'enregistrement est en attente." },
-          { "heading": "Cookies nécessaires", "body": "Le site peut stocker une préférence minimale de consentement afin de se souvenir si les médias optionnels sont acceptés ou refusés. Cela est nécessaire pour respecter votre choix." },
+          { "heading": "Cookies nécessaires", "body": "Le site stocke un seul élément localStorage minimal nommé bighonda-cookie-consent afin de mémoriser les choix de cookies. Cet élément contient la version du consentement, les catégories acceptées et la date de mise à jour. Il ne stocke aucune information personnelle." },
           { "heading": "Préférences", "body": "La langue fonctionne par routes URL plutôt que par cookie. Tout futur cookie de préférence doit être ajouté à cette politique avant activation." },
           { "heading": "Analyse", "body": "Aucun fournisseur d'analyse actif n'a été trouvé lors de cet audit. Si un outil d'analyse est ajouté, cette politique et les contrôles de consentement devront être mis à jour." },
-          { "heading": "Médias intégrés et cookies tiers", "body": "Les intégrations YouTube et Spotify sont des médias optionnels. Elles ne sont pas chargées tant que les cookies médias ne sont pas acceptés ou que le visiteur ne choisit pas de les charger. Un lecteur externe peut envoyer des informations au fournisseur." },
+          { "heading": "Médias intégrés et cookies tiers", "body": "Les intégrations YouTube et Spotify sont des médias intégrés optionnels. Elles ne sont pas chargées tant que les cookies de médias intégrés ne sont pas acceptés ou que le visiteur ne choisit pas d'autoriser les médias intégrés. Un lecteur externe peut envoyer des informations au fournisseur." },
           { "heading": "Durée", "body": "Le choix local de consentement est conservé jusqu'à 180 jours, sauf suppression du stockage du navigateur ou changement des paramètres." },
           { "heading": "Base légale", "body": "Le stockage nécessaire relève de l'intérêt légitime à exploiter un site conforme. Les cookies médias optionnels reposent sur le consentement lorsque nécessaire." },
-          { "heading": "Accepter, refuser ou modifier", "body": "L'interface propose Tout accepter, Refuser le non essentiel et Gérer les préférences. Vous pouvez modifier votre choix via le lien Paramètres des cookies dans le pied de page." },
+          { "heading": "Accepter, refuser ou modifier", "body": "L'interface propose Tout accepter, Refuser les cookies non essentiels et Gérer les préférences. Le stockage nécessaire reste activé. Vous pouvez modifier ou retirer votre choix via le lien Paramètres des cookies dans le pied de page." },
           { "heading": "Contrôles du navigateur", "body": "Vous pouvez aussi bloquer ou supprimer les cookies dans votre navigateur, même si certaines fonctions peuvent alors se comporter différemment." },
           { "heading": "Mises à jour et contact", "body": "Cette politique doit être mise à jour si de nouveaux cookies, analyses, intégrations, authentifications CMS ou outils marketing sont ajoutés. Les questions peuvent être envoyées à contact@bighondastudios.com." }
         ]
@@ -233,13 +233,13 @@
         "sections": [
           { "heading": "Vad cookies är", "body": "Cookies och liknande tekniker är små filer eller webbläsarlagringar som används för att komma ihåg inställningar, stödja säkerhet, mäta användning eller aktivera inbäddade tjänster." },
           { "heading": "Vem driver webbplatsen", "body": "Webbplatsen drivs för närvarande av Saul Loubassa Bighonda under namnet Bighonda Studios medan registrering väntar." },
-          { "heading": "Nödvändiga cookies", "body": "Webbplatsen kan lagra en minimal samtyckespreferens för att komma ihåg om valfria medier accepteras eller avvisas. Detta behövs för att respektera ditt val." },
+          { "heading": "Nödvändiga cookies", "body": "Webbplatsen lagrar ett minimalt localStorage-objekt med namnet bighonda-cookie-consent för att komma ihåg cookieval. Objektet innehåller samtyckesversion, accepterade kategorier och uppdateringstid. Det lagrar inga personuppgifter." },
           { "heading": "Preferenser", "body": "Språk hanteras via URL-rutter i stället för cookie. Framtida preferenscookies bör läggas till i policyn innan de aktiveras." },
           { "heading": "Analys", "body": "Ingen aktiv analysleverantör hittades vid denna granskning. Om analys läggs till ska policyn och samtyckeskontrollerna uppdateras först." },
-          { "heading": "Inbäddade medier och tredjepartscookies", "body": "YouTube- och Spotify-inbäddningar är valfria medier. De laddas inte förrän mediacookies accepteras eller besökaren väljer att ladda dem. En extern spelare kan skicka information till leverantören." },
+          { "heading": "Inbäddade medier och tredjepartscookies", "body": "YouTube- och Spotify-inbäddningar är valfria inbäddade medier. De laddas inte förrän cookies för inbäddade medier accepteras eller besökaren väljer att tillåta inbäddade medier. En extern spelare kan skicka information till leverantören." },
           { "heading": "Varaktighet", "body": "Det lokala samtyckesvalet sparas upp till 180 dagar om du inte rensar webbläsarlagring eller ändrar cookieinställningar." },
           { "heading": "Rättslig grund", "body": "Nödvändig lagring används för legitima intressen i att driva en efterlevande webbplats. Valfria mediacookies baseras på samtycke där det krävs." },
-          { "heading": "Acceptera, avvisa eller ändra", "body": "Gränssnittet erbjuder Acceptera alla, Avvisa icke nödvändiga och Hantera inställningar. Du kan ändra valet via Cookieinställningar i sidfoten." },
+          { "heading": "Acceptera, avvisa eller ändra", "body": "Gränssnittet erbjuder Acceptera alla, Avvisa icke-nödvändiga och Hantera inställningar. Nödvändig lagring är alltid aktiverad. Du kan ändra eller återkalla valet via Cookieinställningar i sidfoten." },
           { "heading": "Webbläsarkontroller", "body": "Du kan även blockera eller ta bort cookies i webbläsarens inställningar, även om vissa funktioner då kan fungera annorlunda." },
           { "heading": "Uppdateringar och kontakt", "body": "Policyn bör uppdateras när nya cookies, analysverktyg, inbäddningar, CMS-autentisering eller marknadsföringsverktyg läggs till. Frågor kan skickas till contact@bighondastudios.com." }
         ]
@@ -313,34 +313,43 @@
       "reject": "Reject non-essential",
       "manage": "Manage preferences",
       "save": "Save preferences",
+      "necessaryLabel": "Necessary",
+      "necessaryDescription": "Always enabled. Used only to remember your cookie choice.",
       "mediaLabel": "Optional media embeds",
       "mediaDescription": "Allow YouTube, Spotify, and similar embedded players to load. These providers may receive usage information or set cookies.",
       "settings": "Cookie settings",
-      "loadMedia": "Load external media"
+      "loadMedia": "Allow embedded media",
+      "mediaDisabled": "External media is disabled until you allow embedded media cookies."
     },
     "fr": {
       "bannerTitle": "Choix des cookies",
       "bannerText": "Ce site utilise un stockage nécessaire pour mémoriser vos choix. Les médias externes optionnels, comme YouTube et Spotify, ne sont chargés que si vous acceptez les cookies médias.",
       "acceptAll": "Tout accepter",
-      "reject": "Refuser le non essentiel",
+      "reject": "Refuser les cookies non essentiels",
       "manage": "Gérer les préférences",
-      "save": "Enregistrer",
+      "save": "Enregistrer les préférences",
+      "necessaryLabel": "Nécessaires",
+      "necessaryDescription": "Toujours activé. Utilisé uniquement pour mémoriser votre choix de cookies.",
       "mediaLabel": "Médias intégrés optionnels",
       "mediaDescription": "Autoriser YouTube, Spotify et les lecteurs similaires. Ces fournisseurs peuvent recevoir des informations d'utilisation ou déposer des cookies.",
       "settings": "Paramètres des cookies",
-      "loadMedia": "Charger le média externe"
+      "loadMedia": "Autoriser les médias intégrés",
+      "mediaDisabled": "Les médias externes sont désactivés jusqu'à ce que vous autorisiez les cookies de médias intégrés."
     },
     "sv": {
       "bannerTitle": "Cookieval",
       "bannerText": "Webbplatsen använder nödvändig lagring för att komma ihåg cookieval. Valfria externa medier från exempelvis YouTube och Spotify laddas endast om du accepterar mediacookies.",
       "acceptAll": "Acceptera alla",
-      "reject": "Avvisa icke nödvändiga",
+      "reject": "Avvisa icke-nödvändiga",
       "manage": "Hantera inställningar",
       "save": "Spara inställningar",
+      "necessaryLabel": "Nödvändiga",
+      "necessaryDescription": "Alltid aktiverat. Används endast för att komma ihåg ditt cookieval.",
       "mediaLabel": "Valfria medieinbäddningar",
       "mediaDescription": "Tillåt YouTube, Spotify och liknande inbäddade spelare. Dessa leverantörer kan ta emot användningsinformation eller sätta cookies.",
       "settings": "Cookieinställningar",
-      "loadMedia": "Ladda externt media"
+      "loadMedia": "Tillåt inbäddade medier",
+      "mediaDisabled": "Externa medier är inaktiverade tills du tillåter cookies för inbäddade medier."
     }
   }
 }

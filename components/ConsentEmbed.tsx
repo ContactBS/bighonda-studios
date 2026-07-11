@@ -19,11 +19,11 @@ export function ConsentEmbed({ allow, className = "h-full w-full", locale = defa
 
   useEffect(() => {
     setActiveLocale(getLocaleFromPathname(window.location.pathname));
-    setCanLoad(Boolean(getBrowserCookieConsent()?.media));
+    setCanLoad(Boolean(getBrowserCookieConsent()?.categories.embeddedMedia));
 
     function handleChange(event: Event) {
-      const detail = (event as CustomEvent<{ media: boolean }>).detail;
-      setCanLoad(Boolean(detail?.media));
+      const detail = (event as CustomEvent<{ categories?: { embeddedMedia?: boolean }; media?: boolean }>).detail;
+      setCanLoad(Boolean(detail?.categories?.embeddedMedia ?? detail?.media));
     }
 
     window.addEventListener("bighonda-cookie-consent-changed", handleChange);
@@ -41,7 +41,8 @@ export function ConsentEmbed({ allow, className = "h-full w-full", locale = defa
     <div className="grid min-h-64 place-items-center rounded-sm border border-ink/10 bg-bone p-6 text-center shadow-soft">
       <div className="max-w-xl">
         <p className="font-serif text-2xl text-ink">{title}</p>
-        <p className="mt-3 text-sm leading-7 text-ink/68">{notice.cookieExternalMedia}</p>
+        <p className="mt-3 text-sm leading-7 text-ink/68">{labels.mediaDisabled}</p>
+        <p className="mt-2 text-sm leading-7 text-ink/68">{notice.cookieExternalMedia}</p>
         <button className="mt-5 min-h-11 rounded-sm bg-ink px-5 py-3 text-sm font-semibold text-bone transition hover:bg-clay" onClick={openCookieSettings} type="button">
           {labels.loadMedia}
         </button>
