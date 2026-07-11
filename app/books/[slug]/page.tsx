@@ -5,6 +5,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { JsonLd } from "@/components/JsonLd";
 import { SectionHeader } from "@/components/SectionHeader";
 import { absoluteUrl, books, getBookBySlug } from "@/lib/content";
+import { getRetailerLabel } from "@/lib/legal";
 
 type BookPageProps = {
   params: Promise<{
@@ -76,7 +77,7 @@ export default async function BookDetailPage({ params }: BookPageProps) {
               {book.purchaseLinks.length ? (
                 book.purchaseLinks.map((link) => (
                   <ButtonLink href={link.url} key={link.label}>
-                    {link.label}
+                    {getRetailerLabel(link.label)}
                   </ButtonLink>
                 ))
               ) : (

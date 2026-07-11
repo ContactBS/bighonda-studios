@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
+import { ConsentEmbed } from "@/components/ConsentEmbed";
 import { SectionHeader } from "@/components/SectionHeader";
 import { getRecentMusicReleases, music } from "@/lib/content";
 import type { MusicRelease } from "@/lib/types";
@@ -57,10 +58,9 @@ export default function MusicBySaulPage() {
           </div>
           {spotifyEmbedUrl ? (
             <div className="overflow-hidden rounded-sm border border-ink/10 bg-bone shadow-soft">
-              <iframe
+              <ConsentEmbed
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 className="h-[352px] w-full"
-                loading="lazy"
                 src={spotifyEmbedUrl}
                 title={`${music.artistName} on Spotify`}
               />

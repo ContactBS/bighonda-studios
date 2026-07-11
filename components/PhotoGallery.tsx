@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import { defaultLocale, type Locale, ui } from "@/lib/i18n-config";
+import { acceptsDirectPayments } from "@/lib/legal";
 import type { Photo } from "@/lib/types";
 
 type PhotoGalleryProps = {
@@ -55,8 +56,9 @@ export function PhotoGallery({ photos, locale = defaultLocale }: PhotoGalleryPro
 
 function PhotoModal({ photo, onClose, locale }: { photo: Photo; onClose: () => void; locale: Locale }) {
   const labels = ui[locale].photoGallery;
-  const purchaseLabel = photo.purchaseUrl ? labels.buyPrint : labels.requestPrint;
-  const purchaseHref = photo.purchaseUrl || `mailto:hello@bighondastudios.com?subject=${encodeURIComponent(`Print request: ${photo.title}`)}`;
+  const canUseDirectPurchase = acceptsDirectPayments() && Boolean(photo.purchaseUrl);
+  const purchaseLabel = canUseDirectPurchase ? labels.buyPrint : labels.requestPrint;
+  const purchaseHref = canUseDirectPurchase ? photo.purchaseUrl : `mailto:hello@bighondastudios.com?subject=${encodeURIComponent(`Print enquiry: ${photo.title}`)}`;
 
   return (
     <div aria-modal="true" className="fixed inset-0 z-50 grid place-items-center bg-ink/75 p-4" role="dialog">

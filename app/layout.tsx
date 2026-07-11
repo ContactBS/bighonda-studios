@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CookieConsent } from "@/components/CookieConsent";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
@@ -77,6 +78,7 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
         <Header locale={locale} />
         <main>{children}</main>
         <Footer locale={locale} />
+        <CookieConsent />
       </body>
     </html>
   );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ConsentEmbed } from "@/components/ConsentEmbed";
 import { SectionHeader } from "@/components/SectionHeader";
 import { teachingVideos } from "@/lib/content";
 import type { TeachingVideo } from "@/lib/types";
@@ -50,9 +51,8 @@ function VideoEmbed({ video }: { video: TeachingVideo }) {
   if (embedUrl) {
     return (
       <div className="relative aspect-video overflow-hidden rounded-sm bg-ink shadow-soft">
-        <iframe
+        <ConsentEmbed
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
           className="h-full w-full"
           src={embedUrl}
           title={video.title}

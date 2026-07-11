@@ -35,6 +35,33 @@ Translated pages are available at `/fr/...` and `/sv/...`, for example `/fr/book
 
 For full instructions, see `TRANSLATION_GUIDE.md`.
 
+## Legal and Registration Settings
+
+Legal-page content and registration details live in:
+
+```text
+content/legal.json
+```
+
+While registration is pending, keep:
+
+```json
+"registrationStatus": "pending",
+"acceptsDirectPayments": false
+```
+
+After Swedish registration is completed, update the same file in one place:
+
+```json
+"registrationStatus": "registered",
+"organisationNumber": "add real number here",
+"vatNumber": "add real VAT details here if applicable",
+"fTaxApproved": true,
+"businessAddress": "add real business address here if applicable"
+```
+
+Do not add organisation numbers, VAT details, F-tax status, addresses, or registration dates unless they are confirmed. See `LEGAL_CONTENT_GUIDE.md` before enabling direct payments or paid bookings.
+
 ## Books
 
 Edit `content/books.json`.

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ContactForm } from "@/components/ContactForm";
+import { LegalNotice } from "@/components/LegalNotice";
 import { SectionHeader } from "@/components/SectionHeader";
 import { faqs, getBookingUrl, getContactEmail, services, testimonials } from "@/lib/content";
+import { acceptsDirectPayments } from "@/lib/legal";
 
 export const metadata: Metadata = {
   title: "Teaching & Events",
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function TeachingEventsPage() {
   const contactEmail = getContactEmail();
-  const bookingUrl = getBookingUrl();
+  const bookingUrl = acceptsDirectPayments() ? getBookingUrl() : "";
 
   return (
     <>
@@ -23,9 +25,12 @@ export default function TeachingEventsPage() {
               title="Invite Saul into rooms built for thought, faith, and transformation."
               description="Available for teaching, speaking, sermons, workshops, book talks, podcast interviews, church and community events, photography exhibitions, and custom gatherings."
             />
+            <div className="mt-6">
+              <LegalNotice />
+            </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              {bookingUrl ? <ButtonLink href={bookingUrl}>Book a Time</ButtonLink> : null}
-              <ButtonLink href={`mailto:${contactEmail}?subject=Booking%20inquiry`}>Email Saul</ButtonLink>
+              {bookingUrl ? <ButtonLink href={bookingUrl}>Submit a Booking Enquiry</ButtonLink> : null}
+              <ButtonLink href={`mailto:${contactEmail}?subject=Booking%20inquiry`}>Submit a Booking Enquiry</ButtonLink>
             </div>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
@@ -49,7 +54,7 @@ export default function TeachingEventsPage() {
       <section className="section-pad bg-bone">
         <div className="content-wrap grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <SectionHeader eyebrow="Booking Form" title="Start the conversation." description="The form opens an email with the event details. Add NEXT_PUBLIC_BOOKING_URL for a Calendly or Cal.com button." />
+            <SectionHeader eyebrow="Booking Form" title="Start the conversation." description="The form opens an email with the event details so the enquiry can be reviewed without creating a confirmed booking." />
             <div className="mt-8 grid gap-5">
               {testimonials.map((item) => (
                 <blockquote className="border-l-4 border-bronze pl-5 leading-7 text-ink/72" key={item.quote}>

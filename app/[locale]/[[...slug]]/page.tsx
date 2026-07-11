@@ -4,12 +4,16 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { BookCard } from "@/components/BookCard";
 import { ButtonLink } from "@/components/ButtonLink";
+import { ConsentEmbed } from "@/components/ConsentEmbed";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
+import { LegalNotice } from "@/components/LegalNotice";
+import { LegalPolicyPage } from "@/components/LegalPolicyPage";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { SectionHeader } from "@/components/SectionHeader";
 import { absoluteUrl, getBookingUrl, getContactEmail } from "@/lib/content";
 import { defaultLocale, isLocale, localeOg, localizedInternalHref, localizedPath, localizedRoutes, type Locale, ui } from "@/lib/i18n-config";
+import { acceptsDirectPayments, getLegalPolicy, getRetailerLabel, type LegalPolicyKey } from "@/lib/legal";
 import { getLocalizedBookBySlug, getLocalizedContent, getLocalizedFeaturedBook, getLocalizedFeaturedPhotos, getLocalizedRecentMusicReleases } from "@/lib/localized-content";
 import type { MusicRelease, TeachingVideo } from "@/lib/types";
 
@@ -62,6 +66,22 @@ export async function generateMetadata({ params }: LocalizedPageProps): Promise<
         images: [book.coverImage],
         locale: localeOg[locale],
         type: "book"
+      }
+    };
+  }
+
+  if (isLegalRoute(path)) {
+    const policy = getLegalPolicy(path.slice(1) as LegalPolicyKey, locale);
+    return {
+      title: policy.title,
+      description: policy.description,
+      alternates,
+      openGraph: {
+        title: policy.title,
+        description: policy.description,
+        images: [content.site.heroImage],
+        locale: localeOg[locale],
+        type: "website"
       }
     };
   }
@@ -135,11 +155,20 @@ export default async function LocalizedPage({ params }: LocalizedPageProps) {
   if (slug.length === 1 && slug[0] === "teaching-videos") return <TeachingVideosPage locale={locale} />;
   if (slug.length === 1 && slug[0] === "music-by-saul") return <MusicBySaulPage locale={locale} />;
   if (slug.length === 1 && slug[0] === "contact") return <ContactPage locale={locale} />;
+  if (slug.length === 1 && isLegalKey(slug[0])) return <LegalPolicyPage locale={locale} policyKey={slug[0]} />;
   notFound();
 }
 
 function isLocalizedLocale(locale: string): locale is Exclude<Locale, "en"> {
   return isLocale(locale) && locale !== defaultLocale;
+}
+
+function isLegalKey(value: string): value is LegalPolicyKey {
+  return value === "terms" || value === "privacy" || value === "cookies" || value === "ai-transparency";
+}
+
+function isLegalRoute(path: string): boolean {
+  return isLegalKey(path.replace(/^\//, ""));
 }
 
 function HomePage({ locale }: { locale: Locale }) {
@@ -392,7 +421,7 @@ function BookDetailPage({ locale, slug }: { locale: Locale; slug: string }) {
               {book.purchaseLinks.length ? (
                 book.purchaseLinks.map((link) => (
                   <ButtonLink href={link.url} key={link.label} locale={locale}>
-                    {link.label}
+                    {getRetailerLabel(link.label)}
                   </ButtonLink>
                 ))
               ) : (
@@ -500,6 +529,9 @@ function PhotographyPage({ locale }: { locale: Locale }) {
     <section className="section-pad">
       <div className="content-wrap">
         <SectionHeader eyebrow={labels.nav.photography} title={labels.pages.photographyTitle} description={labels.pages.photographyDescription} />
+        <div className="mt-6">
+          <LegalNotice locale={locale} />
+        </div>
         <div className="mt-10">
           <PhotoGallery locale={locale} photos={photos} />
         </div>
@@ -512,7 +544,7 @@ function TeachingEventsPage({ locale }: { locale: Locale }) {
   const { faqs, services, testimonials } = getLocalizedContent(locale);
   const labels = ui[locale];
   const contactEmail = getContactEmail();
-  const bookingUrl = getBookingUrl();
+  const bookingUrl = acceptsDirectPayments() ? getBookingUrl() : "";
 
   return (
     <>
@@ -520,6 +552,9 @@ function TeachingEventsPage({ locale }: { locale: Locale }) {
         <div className="content-wrap grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <SectionHeader eyebrow={labels.nav.events} title={labels.pages.teachingEventsTitle} description={labels.pages.teachingEventsDescription} />
+            <div className="mt-6">
+              <LegalNotice locale={locale} />
+            </div>
             <div className="mt-8 flex flex-wrap gap-3">
               {bookingUrl ? <ButtonLink href={bookingUrl} locale={locale}>{labels.buttons.bookTime}</ButtonLink> : null}
               <ButtonLink href={`mailto:${contactEmail}?subject=Booking%20inquiry`} locale={locale}>{labels.buttons.emailSaul}</ButtonLink>
@@ -616,10 +651,10 @@ function VideoEmbed({ locale, video }: { locale: Locale; video: TeachingVideo })
   if (embedUrl) {
     return (
       <div className="relative aspect-video overflow-hidden rounded-sm bg-ink shadow-soft">
-        <iframe
+        <ConsentEmbed
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
           className="h-full w-full"
+          locale={locale}
           src={embedUrl}
           title={video.title}
         />
@@ -674,10 +709,10 @@ function MusicBySaulPage({ locale }: { locale: Locale }) {
           </div>
           {spotifyEmbedUrl ? (
             <div className="overflow-hidden rounded-sm border border-ink/10 bg-bone shadow-soft">
-              <iframe
+              <ConsentEmbed
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 className="h-[352px] w-full"
-                loading="lazy"
+                locale={locale}
                 src={spotifyEmbedUrl}
                 title={`${music.artistName} on Spotify`}
               />
@@ -725,13 +760,16 @@ function ContactPage({ locale }: { locale: Locale }) {
   const { books, podcast, site } = getLocalizedContent(locale);
   const labels = ui[locale];
   const contactEmail = getContactEmail();
-  const bookingUrl = getBookingUrl();
+  const bookingUrl = acceptsDirectPayments() ? getBookingUrl() : "";
 
   return (
     <section className="section-pad">
       <div className="content-wrap grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
           <SectionHeader eyebrow={labels.nav.contact} title={labels.pages.contactTitle} description={labels.pages.contactDescription} />
+          <div className="mt-6">
+            <LegalNotice locale={locale} />
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={`mailto:${contactEmail}`} locale={locale}>{labels.buttons.emailSaul} {contactEmail}</ButtonLink>
             {bookingUrl ? <ButtonLink href={bookingUrl} locale={locale} variant="secondary">{labels.buttons.bookTime}</ButtonLink> : null}

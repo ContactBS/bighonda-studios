@@ -65,7 +65,11 @@ export const localizedRoutes = [
   "/teaching-events",
   "/teaching-videos",
   "/music-by-saul",
-  "/contact"
+  "/contact",
+  "/terms",
+  "/privacy",
+  "/cookies",
+  "/ai-transparency"
 ];
 
 export const ui = {
@@ -86,6 +90,7 @@ export const ui = {
     footer: {
       explore: "Explore",
       links: "Links",
+      legal: "Legal",
       copyright: "All rights reserved."
     },
     buttons: {
@@ -110,6 +115,12 @@ export const ui = {
       openTransistor: "Open Transistor Page",
       suggestTopic: "Suggest a Conversation Topic",
       bookSermon: "Book Saul for a Sermon or Workshop"
+    },
+    legal: {
+      terms: "Terms of Use",
+      privacy: "Privacy Policy",
+      cookies: "Cookie Policy",
+      aiTransparency: "AI-Assisted Content Policy"
     },
     common: {
       alsoPublished: "Also published",
@@ -184,7 +195,7 @@ export const ui = {
       teachingEventsTitle: "Invite Saul into rooms built for thought, faith, and transformation.",
       teachingEventsDescription: "Available for teaching, speaking, sermons, workshops, book talks, podcast interviews, church and community events, photography exhibitions, and custom gatherings.",
       bookingTitle: "Start the conversation.",
-      bookingDescription: "The form opens an email with the event details. Add NEXT_PUBLIC_BOOKING_URL for a Calendly or Cal.com button.",
+      bookingDescription: "The form opens an email with the event details so the enquiry can be reviewed without creating a confirmed booking.",
       faqTitle: "Practical notes before booking.",
       teachingVideosTitle: "Teaching, sermons, lessons, and reflections.",
       teachingVideosDescription: "A space for Saul Loubassa Bighonda to share teaching videos, sermons, lessons, reflections, workshops, and other video-based instruction.",
@@ -211,6 +222,7 @@ export const ui = {
     footer: {
       explore: "Explorer",
       links: "Liens",
+      legal: "Mentions légales",
       copyright: "Tous droits réservés."
     },
     buttons: {
@@ -235,6 +247,12 @@ export const ui = {
       openTransistor: "Ouvrir la page Transistor",
       suggestTopic: "Suggérer un sujet",
       bookSermon: "Inviter Saul pour une prédication ou un atelier"
+    },
+    legal: {
+      terms: "Conditions d'utilisation",
+      privacy: "Politique de confidentialité",
+      cookies: "Politique relative aux cookies",
+      aiTransparency: "Politique sur le contenu assisté par IA"
     },
     common: {
       alsoPublished: "Également publié",
@@ -309,7 +327,7 @@ export const ui = {
       teachingEventsTitle: "Invitez Saul dans des espaces faits pour la pensée, la foi et la transformation.",
       teachingEventsDescription: "Disponible pour enseignements, prises de parole, prédications, ateliers, rencontres autour des livres, interviews, événements d'église et communautaires, expositions photo et rencontres sur mesure.",
       bookingTitle: "Commencer la conversation.",
-      bookingDescription: "Le formulaire ouvre un e-mail avec les détails de l'événement. Ajoutez NEXT_PUBLIC_BOOKING_URL pour afficher un bouton Calendly ou Cal.com.",
+      bookingDescription: "Le formulaire ouvre un e-mail avec les détails de l'événement afin que la demande puisse être examinée sans créer de réservation confirmée.",
       faqTitle: "Notes pratiques avant de réserver.",
       teachingVideosTitle: "Enseignements, prédications, leçons et réflexions.",
       teachingVideosDescription: "Un espace pour partager les vidéos d'enseignement, prédications, leçons, réflexions, ateliers et autres instructions vidéo de Saul Loubassa Bighonda.",
@@ -336,6 +354,7 @@ export const ui = {
     footer: {
       explore: "Utforska",
       links: "Länkar",
+      legal: "Juridiskt",
       copyright: "Alla rättigheter förbehållna."
     },
     buttons: {
@@ -360,6 +379,12 @@ export const ui = {
       openTransistor: "Öppna Transistor-sidan",
       suggestTopic: "Föreslå ett samtalsämne",
       bookSermon: "Boka Saul för predikan eller workshop"
+    },
+    legal: {
+      terms: "Användarvillkor",
+      privacy: "Integritetspolicy",
+      cookies: "Cookiepolicy",
+      aiTransparency: "Policy för AI-assisterat innehåll"
     },
     common: {
       alsoPublished: "Även publicerad",
@@ -434,7 +459,7 @@ export const ui = {
       teachingEventsTitle: "Bjud in Saul till rum byggda för tanke, tro och förvandling.",
       teachingEventsDescription: "Tillgänglig för undervisning, tal, predikningar, workshops, boksamtal, podcastintervjuer, kyrko- och communityevent, fotoutställningar och skräddarsydda samlingar.",
       bookingTitle: "Starta samtalet.",
-      bookingDescription: "Formuläret öppnar ett e-postmeddelande med eventdetaljerna. Lägg till NEXT_PUBLIC_BOOKING_URL för en Calendly- eller Cal.com-knapp.",
+      bookingDescription: "Formuläret öppnar ett e-postmeddelande med eventdetaljerna så att förfrågan kan granskas utan att skapa en bekräftad bokning.",
       faqTitle: "Praktiska anteckningar innan bokning.",
       teachingVideosTitle: "Undervisning, predikningar, lektioner och reflektioner.",
       teachingVideosDescription: "En plats där Saul Loubassa Bighonda kan dela undervisningsvideor, predikningar, lektioner, reflektioner, workshops och annan videobaserad undervisning.",

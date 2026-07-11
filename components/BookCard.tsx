@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { defaultLocale, localizedInternalHref, type Locale, ui } from "@/lib/i18n-config";
+import { getRetailerLabel } from "@/lib/legal";
 import type { Book } from "@/lib/types";
 import { ButtonLink } from "./ButtonLink";
 
@@ -27,7 +28,7 @@ export function BookCard({ book, featured = false, locale = defaultLocale }: Boo
           <ButtonLink href={`/books/${book.slug}`} locale={locale}>{labels.viewBook}</ButtonLink>
           {book.purchaseLinks[0] ? (
             <ButtonLink href={book.purchaseLinks[0].url} locale={locale} variant="secondary">
-              {labels.buyBook}
+              {getRetailerLabel(book.purchaseLinks[0].label)}
             </ButtonLink>
           ) : (
             <ButtonLink href="/contact" locale={locale} variant="secondary">

@@ -1,0 +1,346 @@
+{
+  "settings": {
+    "operatorName": "Saul Loubassa Bighonda",
+    "brandName": "Bighonda Studios",
+    "registrationStatus": "pending",
+    "organisationNumber": "",
+    "vatNumber": "",
+    "fTaxApproved": false,
+    "acceptsDirectPayments": false,
+    "contactEmail": "contact@bighondastudios.com",
+    "businessAddress": "",
+    "country": "Sweden",
+    "effectiveDate": "2026-07-11",
+    "lastUpdated": "2026-07-11",
+    "authoritativeLocale": "en"
+  },
+  "notices": {
+    "en": {
+      "registrationLabel": "Registration status: Pending",
+      "authoritative": "The English version is the authoritative version until the policies have received final legal review. Translations are provided for convenience.",
+      "full": "Bighonda Studios is currently awaiting completion of its Swedish business registration. Until registration is completed and this notice is updated, this website operates primarily as a portfolio and information platform. Bighonda Studios does not directly accept payments, deposits, or paid service bookings through this website during this period. Book purchase links lead to independent third-party retailers. Any book purchase is made from and processed by the relevant retailer under that retailer's own terms, payment arrangements, and privacy practices. Contact forms, booking enquiries, print enquiries, and other expressions of interest are non-binding. Submitting an enquiry does not create a contract, confirm a booking, reserve a date, or create a payment obligation.",
+      "short": "Registration pending: Bighonda Studios currently operates this website as a portfolio and does not accept direct payments or paid bookings through the website. Book purchase links are handled by independent retailers.",
+      "cookieExternalMedia": "This external media player may set cookies or receive usage information from the provider. Load it only if you accept optional media cookies."
+    },
+    "fr": {
+      "registrationLabel": "Statut d'enregistrement : en attente",
+      "authoritative": "La version anglaise fait foi jusqu'à l'examen juridique final des politiques. Les traductions sont fournies pour faciliter la lecture.",
+      "full": "Bighonda Studios attend actuellement la finalisation de son enregistrement d'entreprise en Suède. Jusqu'à ce que l'enregistrement soit terminé et que cette notice soit mise à jour, ce site fonctionne principalement comme une plateforme de portfolio et d'information. Pendant cette période, Bighonda Studios n'accepte pas directement de paiements, d'acomptes ni de réservations payantes par l'intermédiaire du site. Les liens d'achat de livres mènent vers des détaillants tiers indépendants. Tout achat de livre est effectué auprès du détaillant concerné et traité selon ses propres conditions, modalités de paiement et pratiques de confidentialité. Les formulaires de contact, demandes de réservation, demandes de tirages et autres manifestations d'intérêt sont non contraignants. L'envoi d'une demande ne crée pas de contrat, ne confirme pas une réservation, ne réserve aucune date et ne crée aucune obligation de paiement.",
+      "short": "Enregistrement en attente : Bighonda Studios exploite actuellement ce site comme portfolio et n'accepte pas de paiements directs ni de réservations payantes via le site. Les achats de livres sont traités par des détaillants indépendants.",
+      "cookieExternalMedia": "Ce lecteur externe peut déposer des cookies ou recevoir des informations d'utilisation du fournisseur. Chargez-le uniquement si vous acceptez les cookies médias optionnels."
+    },
+    "sv": {
+      "registrationLabel": "Registreringsstatus: väntande",
+      "authoritative": "Den engelska versionen är den auktoritativa versionen tills policyerna har fått slutlig juridisk granskning. Översättningarna tillhandahålls som hjälp.",
+      "full": "Bighonda Studios väntar för närvarande på att den svenska företagsregistreringen ska slutföras. Fram tills registreringen är klar och denna information uppdateras fungerar webbplatsen främst som portfolio och informationsplattform. Under denna period tar Bighonda Studios inte direkt emot betalningar, depositioner eller betalda bokningar via webbplatsen. Bokköpslänkar leder till oberoende tredjepartsåterförsäljare. Alla bokköp görs hos och behandlas av respektive återförsäljare enligt återförsäljarens egna villkor, betalningsarrangemang och integritetspraxis. Kontaktformulär, bokningsförfrågningar, printförfrågningar och andra intresseanmälningar är inte bindande. Att skicka en förfrågan skapar inget avtal, bekräftar ingen bokning, reserverar inget datum och skapar ingen betalningsskyldighet.",
+      "short": "Registrering väntar: Bighonda Studios driver för närvarande webbplatsen som portfolio och tar inte emot direkta betalningar eller betalda bokningar via webbplatsen. Bokköpslänkar hanteras av oberoende återförsäljare.",
+      "cookieExternalMedia": "Denna externa mediaspelare kan sätta cookies eller ta emot användningsinformation från leverantören. Ladda den endast om du accepterar valfria mediacookies."
+    }
+  },
+  "policies": {
+    "terms": {
+      "slug": "terms",
+      "en": {
+        "title": "Terms of Use",
+        "description": "Terms for using the Bighonda Studios website while Swedish business registration is pending.",
+        "sections": [
+          { "heading": "About these terms", "body": "These Terms of Use explain how visitors may use the Bighonda Studios website. By using the website, you agree to use it lawfully, respectfully, and in accordance with these terms." },
+          { "heading": "Website operator", "body": "The website is currently operated by Saul Loubassa Bighonda under the Bighonda Studios name while Swedish business registration is pending. No organisation number, VAT number, F-tax approval, registered address, or registration date is stated unless it appears in the legal settings after registration is completed." },
+          { "heading": "Current registration status", "body": "Bighonda Studios is awaiting completion of Swedish business registration. Until this status changes, the website operates primarily as a portfolio and information platform." },
+          { "heading": "Portfolio and informational purpose", "body": "The site presents Saul's writing, books, podcast, photography, music, teaching, speaking, videos, and creative work. It is not currently a direct checkout or paid booking platform." },
+          { "heading": "No direct payments while registration is pending", "body": "Bighonda Studios does not directly accept payments, deposits, paid service bookings, or completed photography orders through this website while registration is pending. Any future payment feature must be deliberately enabled after registration and legal review." },
+          { "heading": "Non-binding enquiries", "body": "Contact forms, booking enquiries, print enquiries, and other expressions of interest are non-binding. An enquiry is not an accepted offer or contract. No date or service is reserved until expressly confirmed in writing at a later stage, and Bighonda Studios may decline an enquiry." },
+          { "heading": "External book retailers and third-party links", "body": "Book purchase links lead to independent third-party retailers such as Apple Books, Amazon, or Google Play Books. Any purchase is made from and processed by the relevant retailer under that retailer's own terms, payment arrangements, and privacy practices." },
+          { "heading": "Intellectual property", "body": "Unless otherwise stated, the website text, photographs, designs, music descriptions, video descriptions, podcast descriptions, and other original materials are owned by or licensed to Saul Loubassa Bighonda. You may not copy, republish, sell, license, scrape, or use website content to train commercial AI systems without permission, except where mandatory law permits otherwise." },
+          { "heading": "Permitted use", "body": "You may view the website, share ordinary links to public pages, make lawful enquiries, and use the site for personal, informational, or journalistic reference in a fair and limited way." },
+          { "heading": "Prohibited use", "body": "You must not misuse the website, attempt to disrupt it, submit unlawful or abusive messages, impersonate others, scrape content at scale, bypass technical protections, or use the website in a way that infringes rights or violates applicable law." },
+          { "heading": "Books, photographs, music, podcast episodes, videos, and written material", "body": "Creative works referenced on the website may also be subject to separate terms from publishers, retailers, music platforms, podcast platforms, social platforms, galleries, or other providers. Those external terms apply where relevant." },
+          { "heading": "AI-assisted content", "body": "Some material, especially music production and website translations, may involve artificial intelligence tools. See the AI-Assisted Content Transparency Policy for more detail." },
+          { "heading": "Accuracy and availability", "body": "Bighonda Studios aims to keep information accurate and available, but the website may contain errors, outdated details, broken links, or temporary interruptions. Information may be changed or removed without notice." },
+          { "heading": "No professional advice", "body": "Website content is provided for general information, reflection, and creative presentation. It is not professional legal, financial, medical, psychological, or theological advice. Visitors should seek qualified advice where appropriate." },
+          { "heading": "Third-party platforms and embeds", "body": "The website may link to or embed services such as YouTube, Spotify, Apple Music, Transistor, social platforms, book retailers, and hosting or infrastructure providers. External platforms have their own terms and privacy policies." },
+          { "heading": "Limitation of liability", "body": "To the extent permitted by law, Saul Loubassa Bighonda and Bighonda Studios are not responsible for indirect losses, third-party platform issues, or visitor misuse of the website. Nothing in these terms excludes rights or liabilities that cannot legally be excluded." },
+          { "heading": "User-submitted messages and enquiries", "body": "If you submit a message or enquiry, you are responsible for ensuring it is accurate, lawful, and appropriate. Do not send sensitive information unless necessary for your enquiry." },
+          { "heading": "Privacy and cookies", "body": "Personal data and cookies are handled as described in the Privacy Policy and Cookie Policy." },
+          { "heading": "Changes to the website or terms", "body": "The website and these terms may be updated as the project develops, including after business registration is completed." },
+          { "heading": "Governing law", "body": "These terms are governed by Swedish law, subject to mandatory consumer protections and applicable jurisdiction rules." },
+          { "heading": "Contact information", "body": "Questions about these terms may be sent to contact@bighondastudios.com." }
+        ]
+      },
+      "fr": {
+        "title": "Conditions d'utilisation",
+        "description": "Conditions d'utilisation du site Bighonda Studios pendant que l'enregistrement suédois est en attente.",
+        "sections": [
+          { "heading": "À propos de ces conditions", "body": "Ces conditions expliquent comment utiliser le site Bighonda Studios. En utilisant le site, vous acceptez de l'utiliser légalement, respectueusement et conformément à ces conditions." },
+          { "heading": "Exploitant du site", "body": "Le site est actuellement exploité par Saul Loubassa Bighonda sous le nom Bighonda Studios pendant que l'enregistrement suédois est en attente. Aucun numéro d'organisation, numéro de TVA, statut F-tax, adresse enregistrée ou date d'enregistrement n'est indiqué tant qu'il n'est pas ajouté dans les paramètres juridiques après l'enregistrement." },
+          { "heading": "Statut actuel", "body": "Bighonda Studios attend la finalisation de son enregistrement en Suède. Jusqu'à ce changement, le site fonctionne principalement comme portfolio et plateforme d'information." },
+          { "heading": "Portfolio et information", "body": "Le site présente les livres, textes, podcast, photographies, musique, enseignements, conférences, vidéos et travaux créatifs de Saul. Il ne s'agit pas actuellement d'une plateforme de paiement direct ou de réservation payante." },
+          { "heading": "Pas de paiements directs", "body": "Pendant que l'enregistrement est en attente, Bighonda Studios n'accepte pas directement de paiements, d'acomptes, de réservations payantes ou de commandes photo finalisées via ce site." },
+          { "heading": "Demandes non contraignantes", "body": "Les formulaires de contact, demandes de réservation, demandes de tirages et autres manifestations d'intérêt sont non contraignants. Une demande n'est ni une offre acceptée ni un contrat. Aucune date ou prestation n'est réservée sans confirmation écrite ultérieure." },
+          { "heading": "Détaillants de livres et liens tiers", "body": "Les liens d'achat de livres mènent vers des détaillants indépendants comme Apple Books, Amazon ou Google Play Books. Tout achat est traité selon les conditions, paiements et pratiques de confidentialité du détaillant concerné." },
+          { "heading": "Propriété intellectuelle", "body": "Sauf indication contraire, les textes, photographies, descriptions, designs et autres contenus originaux appartiennent à Saul Loubassa Bighonda ou sont utilisés sous licence. Vous ne pouvez pas les copier, republier, vendre, concéder sous licence, scraper ou utiliser pour entraîner des systèmes d'IA commerciaux sans autorisation, sauf lorsque la loi impérative le permet." },
+          { "heading": "Utilisation permise", "body": "Vous pouvez consulter le site, partager des liens vers des pages publiques et envoyer des demandes légales et appropriées." },
+          { "heading": "Utilisation interdite", "body": "Vous ne devez pas perturber le site, envoyer des messages abusifs ou illégaux, usurper une identité, scraper le contenu à grande échelle, contourner des protections techniques ou violer les droits d'autrui." },
+          { "heading": "Oeuvres créatives", "body": "Les livres, photographies, musiques, épisodes de podcast, vidéos et textes peuvent aussi être soumis aux conditions de plateformes, éditeurs, détaillants ou autres fournisseurs externes." },
+          { "heading": "Contenu assisté par IA", "body": "Certains contenus, notamment la production musicale et les traductions du site, peuvent impliquer des outils d'intelligence artificielle. Consultez la politique de transparence sur l'IA." },
+          { "heading": "Exactitude et disponibilité", "body": "Bighonda Studios vise l'exactitude, mais le site peut contenir des erreurs, informations obsolètes, liens rompus ou interruptions temporaires." },
+          { "heading": "Pas de conseil professionnel", "body": "Le contenu est fourni pour information générale, réflexion et présentation créative. Il ne constitue pas un conseil juridique, financier, médical, psychologique ou théologique." },
+          { "heading": "Plateformes et intégrations tierces", "body": "Le site peut lier ou intégrer YouTube, Spotify, Apple Music, Transistor, réseaux sociaux, détaillants de livres et autres services. Ces plateformes ont leurs propres conditions et politiques." },
+          { "heading": "Responsabilité", "body": "Dans la mesure permise par la loi, Saul Loubassa Bighonda et Bighonda Studios ne sont pas responsables des pertes indirectes, problèmes de plateformes tierces ou usages abusifs du site. Rien n'exclut les droits qui ne peuvent légalement être exclus." },
+          { "heading": "Messages envoyés", "body": "Si vous envoyez un message, vous êtes responsable de son exactitude et de son caractère légal et approprié." },
+          { "heading": "Confidentialité et cookies", "body": "Les données personnelles et cookies sont décrits dans la Politique de confidentialité et la Politique relative aux cookies." },
+          { "heading": "Modifications", "body": "Le site et ces conditions peuvent être mis à jour, notamment après l'enregistrement de l'activité." },
+          { "heading": "Droit applicable", "body": "Ces conditions sont régies par le droit suédois, sous réserve des protections impératives des consommateurs et règles de compétence applicables." },
+          { "heading": "Contact", "body": "Les questions peuvent être envoyées à contact@bighondastudios.com." }
+        ]
+      },
+      "sv": {
+        "title": "Användarvillkor",
+        "description": "Villkor för användning av Bighonda Studios webbplats medan svensk företagsregistrering väntar.",
+        "sections": [
+          { "heading": "Om dessa villkor", "body": "Dessa villkor förklarar hur besökare får använda Bighonda Studios webbplats. Genom att använda webbplatsen samtycker du till att använda den lagligt, respektfullt och enligt villkoren." },
+          { "heading": "Webbplatsens operatör", "body": "Webbplatsen drivs för närvarande av Saul Loubassa Bighonda under namnet Bighonda Studios medan svensk företagsregistrering väntar. Inget organisationsnummer, momsnummer, F-skatt, registrerad adress eller registreringsdatum anges om det inte senare läggs in i de juridiska inställningarna." },
+          { "heading": "Aktuell registreringsstatus", "body": "Bighonda Studios väntar på slutförd svensk företagsregistrering. Fram tills statusen ändras fungerar webbplatsen främst som portfolio och informationsplattform." },
+          { "heading": "Portfolio och information", "body": "Webbplatsen presenterar Sauls böcker, texter, podcast, fotografi, musik, undervisning, tal, videor och kreativa arbete. Den är för närvarande inte en direkt betalnings- eller bokningsplattform." },
+          { "heading": "Inga direkta betalningar", "body": "Medan registreringen väntar tar Bighonda Studios inte direkt emot betalningar, depositioner, betalda bokningar eller slutförda fotobeställningar via webbplatsen." },
+          { "heading": "Icke bindande förfrågningar", "body": "Kontaktformulär, bokningsförfrågningar, printförfrågningar och andra intresseanmälningar är inte bindande. En förfrågan är inte ett accepterat erbjudande eller avtal. Inget datum eller tjänst reserveras utan uttrycklig skriftlig bekräftelse senare." },
+          { "heading": "Externa bokåterförsäljare och länkar", "body": "Bokköpslänkar leder till oberoende återförsäljare som Apple Books, Amazon eller Google Play Books. Köp sker hos respektive återförsäljare enligt deras villkor, betalningslösningar och integritetspraxis." },
+          { "heading": "Immateriella rättigheter", "body": "Om inget annat anges ägs eller licensieras webbplatsens texter, fotografier, beskrivningar, design och annat originalmaterial av Saul Loubassa Bighonda. Du får inte kopiera, återpublicera, sälja, licensiera, skrapa eller använda innehåll för att träna kommersiella AI-system utan tillstånd, utom när tvingande lag tillåter det." },
+          { "heading": "Tillåten användning", "body": "Du får läsa webbplatsen, dela vanliga länkar till offentliga sidor och skicka lagliga och lämpliga förfrågningar." },
+          { "heading": "Förbjuden användning", "body": "Du får inte störa webbplatsen, skicka olagliga eller kränkande meddelanden, utge dig för att vara någon annan, skrapa innehåll i stor skala, kringgå tekniska skydd eller bryta mot andras rättigheter." },
+          { "heading": "Kreativa verk", "body": "Böcker, fotografier, musik, podcastavsnitt, videor och texter kan också omfattas av villkor från externa plattformar, förlag, återförsäljare eller andra leverantörer." },
+          { "heading": "AI-assisterat innehåll", "body": "Visst material, särskilt musikproduktion och webbplatsöversättningar, kan involvera AI-verktyg. Se policyn för AI-transparens." },
+          { "heading": "Riktighet och tillgänglighet", "body": "Bighonda Studios strävar efter korrekt information, men webbplatsen kan innehålla fel, föråldrad information, brutna länkar eller tillfälliga avbrott." },
+          { "heading": "Ingen professionell rådgivning", "body": "Innehållet är allmän information, reflektion och kreativ presentation. Det är inte juridisk, ekonomisk, medicinsk, psykologisk eller teologisk rådgivning." },
+          { "heading": "Tredjepartsplattformar", "body": "Webbplatsen kan länka till eller bädda in YouTube, Spotify, Apple Music, Transistor, sociala plattformar, bokåterförsäljare och andra tjänster. Dessa plattformar har egna villkor och integritetspolicyer." },
+          { "heading": "Ansvarsbegränsning", "body": "I den mån lagen tillåter ansvarar Saul Loubassa Bighonda och Bighonda Studios inte för indirekta förluster, problem hos tredjepartsplattformar eller missbruk av webbplatsen. Inget i villkoren utesluter rättigheter som inte lagligen kan uteslutas." },
+          { "heading": "Meddelanden och förfrågningar", "body": "Om du skickar ett meddelande ansvarar du för att det är korrekt, lagligt och lämpligt." },
+          { "heading": "Integritet och cookies", "body": "Personuppgifter och cookies beskrivs i Integritetspolicyn och Cookiepolicyn." },
+          { "heading": "Ändringar", "body": "Webbplatsen och villkoren kan uppdateras när projektet utvecklas, inklusive efter företagsregistrering." },
+          { "heading": "Tillämplig lag", "body": "Villkoren styrs av svensk lag, med förbehåll för tvingande konsumentskydd och tillämpliga behörighetsregler." },
+          { "heading": "Kontakt", "body": "Frågor kan skickas till contact@bighondastudios.com." }
+        ]
+      }
+    },
+    "privacy": {
+      "slug": "privacy",
+      "en": {
+        "title": "Privacy Policy",
+        "description": "How personal data is handled on the Bighonda Studios website.",
+        "sections": [
+          { "heading": "Who is responsible", "body": "Saul Loubassa Bighonda is currently responsible for decisions about personal-data processing connected with the Bighonda Studios website while business registration is pending." },
+          { "heading": "Contact information", "body": "Privacy questions may be sent to contact@bighondastudios.com." },
+          { "heading": "Information visitors provide", "body": "If you contact the website, you may provide your name, email address, organisation, event information, preferred date, location, audience size, budget range, and message contents." },
+          { "heading": "Contact and booking enquiries", "body": "Forms compose an email to the contact address. Enquiries are used to reply, discuss possible work, assess availability, and keep a reasonable correspondence record. They are non-binding while registration is pending." },
+          { "heading": "Email correspondence", "body": "Emails may be stored in the email provider account for as long as needed to respond, manage the relationship, and keep ordinary records." },
+          { "heading": "Newsletter subscriptions", "body": "The website currently uses a mailto newsletter link rather than an active newsletter database. If a newsletter provider is added later, this policy should be updated." },
+          { "heading": "Technical and server information", "body": "Hosting and infrastructure providers may process IP address, browser and device information, request logs, error logs, and security information needed to deliver and protect the website." },
+          { "heading": "Cookies and similar technologies", "body": "Necessary cookie-consent preferences may be stored in the browser. Optional third-party media embeds are loaded only after consent." },
+          { "heading": "Embedded media", "body": "YouTube and Spotify embeds may receive usage information or set cookies after you choose to load optional media. Their own privacy practices apply." },
+          { "heading": "External platforms", "body": "The site links to Apple Books, Amazon, Google Play Books, Transistor, Spotify, Apple Music, YouTube, Instagram, and similar external platforms. Those platforms process data under their own policies." },
+          { "heading": "Purposes and lawful grounds", "body": "Data is processed to answer enquiries, take steps requested before a possible contract, run and secure the website, comply with legal obligations, and pursue legitimate interests such as communication, recordkeeping, and abuse prevention. Consent is used for optional media cookies where required." },
+          { "heading": "Retention", "body": "Messages are kept only as long as reasonably needed for the enquiry, relationship, legal obligations, or legitimate recordkeeping. Technical logs are generally kept for limited operational and security periods by hosting providers." },
+          { "heading": "Service providers", "body": "Actual active services may include Vercel or another hosting provider, GitHub for source-code hosting, email hosting, YouTube, Spotify, Apple Music, Transistor, book retailers, and social platforms. No payment-card information is collected by this website while direct payments are disabled." },
+          { "heading": "International transfers", "body": "Some service providers may process data outside Sweden or the EEA. Where required, safeguards such as standard contractual clauses or provider transfer mechanisms should apply." },
+          { "heading": "Security", "body": "Reasonable technical and organisational measures are used, but no website or email system can be guaranteed completely secure." },
+          { "heading": "Your GDPR rights", "body": "Where applicable, you may request access, rectification, erasure, restriction, portability, objection, and information about processing. You may also withdraw consent where processing is based on consent." },
+          { "heading": "Complaints", "body": "You may contact the Swedish Authority for Privacy Protection, Integritetsskyddsmyndigheten (IMY), if you believe personal data has been handled incorrectly." },
+          { "heading": "Children's data", "body": "The website is not directed at children and does not knowingly seek children's personal data." },
+          { "heading": "Policy updates", "body": "This policy may be updated as the website, registration status, providers, or features change." }
+        ]
+      },
+      "fr": {
+        "title": "Politique de confidentialité",
+        "description": "Comment les données personnelles sont traitées sur le site Bighonda Studios.",
+        "sections": [
+          { "heading": "Responsable des données", "body": "Saul Loubassa Bighonda est actuellement responsable des décisions relatives au traitement des données personnelles liées au site Bighonda Studios pendant que l'enregistrement de l'activité est en attente." },
+          { "heading": "Contact", "body": "Les questions relatives à la confidentialité peuvent être envoyées à contact@bighondastudios.com." },
+          { "heading": "Informations fournies", "body": "Si vous contactez le site, vous pouvez fournir votre nom, adresse e-mail, organisation, informations d'événement, date souhaitée, lieu, taille du public, fourchette de budget et contenu du message." },
+          { "heading": "Demandes de contact et de réservation", "body": "Les formulaires composent un e-mail. Les demandes servent à répondre, discuter d'un éventuel projet, vérifier les disponibilités et conserver une trace raisonnable de la correspondance. Elles sont non contraignantes pendant l'enregistrement en attente." },
+          { "heading": "Correspondance e-mail", "body": "Les e-mails peuvent être conservés dans le compte de messagerie aussi longtemps que nécessaire pour répondre, gérer la relation et conserver des dossiers ordinaires." },
+          { "heading": "Newsletter", "body": "Le site utilise actuellement un lien mailto pour la newsletter plutôt qu'une base d'abonnés active. Si un fournisseur de newsletter est ajouté, cette politique devra être mise à jour." },
+          { "heading": "Informations techniques", "body": "Les fournisseurs d'hébergement et d'infrastructure peuvent traiter l'adresse IP, les informations de navigateur et d'appareil, les journaux de requêtes, erreurs et sécurité nécessaires au fonctionnement et à la protection du site." },
+          { "heading": "Cookies et médias intégrés", "body": "Les préférences de consentement nécessaires peuvent être stockées dans le navigateur. Les intégrations YouTube et Spotify ne sont chargées qu'après consentement aux médias optionnels et leurs politiques s'appliquent." },
+          { "heading": "Plateformes externes", "body": "Le site renvoie vers Apple Books, Amazon, Google Play Books, Transistor, Spotify, Apple Music, YouTube, Instagram et des plateformes similaires. Ces services traitent les données selon leurs propres politiques." },
+          { "heading": "Finalités et bases légales", "body": "Les données sont traitées pour répondre aux demandes, prendre des mesures demandées avant un éventuel contrat, exploiter et sécuriser le site, respecter les obligations légales et poursuivre des intérêts légitimes comme la communication et la prévention des abus. Le consentement est utilisé pour les cookies médias optionnels lorsque nécessaire." },
+          { "heading": "Conservation", "body": "Les messages sont conservés uniquement aussi longtemps que raisonnablement nécessaire pour la demande, la relation, les obligations légales ou les dossiers légitimes. Les journaux techniques sont généralement conservés pendant des périodes opérationnelles et de sécurité limitées." },
+          { "heading": "Prestataires et transferts", "body": "Les services actifs peuvent inclure l'hébergement, GitHub, la messagerie, YouTube, Spotify, Apple Music, Transistor, les détaillants de livres et les réseaux sociaux. Certains peuvent traiter des données hors Suède ou EEE avec les garanties applicables." },
+          { "heading": "Sécurité et droits", "body": "Des mesures raisonnables sont utilisées, mais aucun système n'est totalement sécurisé. Selon le RGPD, vous pouvez demander l'accès, la rectification, l'effacement, la limitation, la portabilité, l'opposition et le retrait du consentement lorsqu'il s'applique." },
+          { "heading": "Réclamations, enfants et mises à jour", "body": "Vous pouvez contacter l'autorité suédoise IMY. Le site ne vise pas les enfants et ne recherche pas sciemment leurs données. Cette politique peut être mise à jour si le site, les prestataires ou les fonctionnalités changent." }
+        ]
+      },
+      "sv": {
+        "title": "Integritetspolicy",
+        "description": "Hur personuppgifter hanteras på Bighonda Studios webbplats.",
+        "sections": [
+          { "heading": "Vem ansvarar", "body": "Saul Loubassa Bighonda ansvarar för närvarande för beslut om personuppgiftsbehandling kopplad till Bighonda Studios webbplats medan företagsregistrering väntar." },
+          { "heading": "Kontakt", "body": "Integritetsfrågor kan skickas till contact@bighondastudios.com." },
+          { "heading": "Information du lämnar", "body": "Om du kontaktar webbplatsen kan du lämna namn, e-postadress, organisation, eventinformation, önskat datum, plats, publikstorlek, budgetintervall och meddelandeinnehåll." },
+          { "heading": "Kontakt- och bokningsförfrågningar", "body": "Formulär skapar ett e-postmeddelande. Uppgifterna används för att svara, diskutera möjligt arbete, bedöma tillgänglighet och föra rimliga korrespondensanteckningar. Förfrågningar är inte bindande medan registrering väntar." },
+          { "heading": "E-postkorrespondens", "body": "E-post kan sparas i e-postkontot så länge det behövs för att svara, hantera relationen och föra vanliga register." },
+          { "heading": "Nyhetsbrev", "body": "Webbplatsen använder för närvarande en mailto-länk för nyhetsbrev och ingen aktiv prenumerationsdatabas. Om en leverantör läggs till ska policyn uppdateras." },
+          { "heading": "Teknisk information", "body": "Hosting- och infrastrukturtjänster kan behandla IP-adress, webbläsar- och enhetsinformation, förfrågningsloggar, felloggar och säkerhetsinformation som behövs för att leverera och skydda webbplatsen." },
+          { "heading": "Cookies och inbäddade medier", "body": "Nödvändiga samtyckespreferenser kan lagras i webbläsaren. YouTube- och Spotify-inbäddningar laddas bara efter samtycke till valfria medier och deras egna policyer gäller." },
+          { "heading": "Externa plattformar", "body": "Webbplatsen länkar till Apple Books, Amazon, Google Play Books, Transistor, Spotify, Apple Music, YouTube, Instagram och liknande tjänster. Dessa behandlar uppgifter enligt egna policyer." },
+          { "heading": "Ändamål och rättsliga grunder", "body": "Uppgifter behandlas för att besvara förfrågningar, vidta åtgärder inför ett möjligt avtal, driva och skydda webbplatsen, uppfylla rättsliga skyldigheter och stödja legitima intressen som kommunikation och missbruksförebyggande. Samtycke används för valfria mediacookies där det krävs." },
+          { "heading": "Lagring", "body": "Meddelanden sparas bara så länge det rimligen behövs för förfrågan, relationen, rättsliga skyldigheter eller legitim dokumentation. Tekniska loggar sparas normalt under begränsade drift- och säkerhetsperioder." },
+          { "heading": "Leverantörer och överföringar", "body": "Aktiva tjänster kan omfatta hosting, GitHub, e-post, YouTube, Spotify, Apple Music, Transistor, bokåterförsäljare och sociala plattformar. Vissa kan behandla uppgifter utanför Sverige eller EES med tillämpliga skyddsåtgärder." },
+          { "heading": "Säkerhet och rättigheter", "body": "Rimliga säkerhetsåtgärder används, men inget system är helt säkert. Enligt GDPR kan du begära tillgång, rättelse, radering, begränsning, dataportabilitet, invändning och återkallelse av samtycke där det gäller." },
+          { "heading": "Klagomål, barn och uppdateringar", "body": "Du kan kontakta Integritetsskyddsmyndigheten (IMY). Webbplatsen riktar sig inte till barn och söker inte medvetet barns personuppgifter. Policyn kan uppdateras när webbplats, leverantörer eller funktioner ändras." }
+        ]
+      }
+    },
+    "cookies": {
+      "slug": "cookies",
+      "en": {
+        "title": "Cookie Policy",
+        "description": "How cookies, consent preferences, and optional embedded media are handled.",
+        "sections": [
+          { "heading": "What cookies are", "body": "Cookies and similar technologies are small files or browser storage entries used to remember settings, support security, measure usage, or enable embedded services." },
+          { "heading": "Who operates the website", "body": "The website is currently operated by Saul Loubassa Bighonda under the Bighonda Studios name while registration is pending." },
+          { "heading": "Necessary cookies", "body": "The site may store a minimal consent preference so it can remember whether optional media cookies are accepted or rejected. This is necessary to respect your choice." },
+          { "heading": "Preferences", "body": "Language is route-based rather than stored as a cookie. Future preference cookies should be added to this policy before activation." },
+          { "heading": "Analytics", "body": "No active analytics provider was found in the project during this audit. If analytics are added later, this policy and the consent controls should be updated first." },
+          { "heading": "Embedded media and third-party cookies", "body": "YouTube and Spotify embeds are optional media. They are not loaded until media cookies are accepted or the visitor chooses to load them. Loading an external player may send information to that provider." },
+          { "heading": "Cookie duration", "body": "The local consent choice is stored for up to 180 days unless you clear browser storage or change your cookie settings." },
+          { "heading": "Legal basis", "body": "Necessary storage is used for legitimate interests in running a compliant website. Optional media cookies are based on consent where required." },
+          { "heading": "Accept, reject, or change choices", "body": "The cookie interface offers Accept all, Reject non-essential, and Manage preferences. You can change your choice later through the Cookie settings link in the footer." },
+          { "heading": "Browser controls", "body": "You can also block or delete cookies in your browser settings, although some features may work differently." },
+          { "heading": "Policy updates", "body": "This policy should be updated when new cookies, analytics, embeds, CMS authentication, or marketing tools are added." },
+          { "heading": "Contact", "body": "Cookie questions may be sent to contact@bighondastudios.com." }
+        ]
+      },
+      "fr": {
+        "title": "Politique relative aux cookies",
+        "description": "Comment les cookies, préférences de consentement et médias intégrés optionnels sont gérés.",
+        "sections": [
+          { "heading": "Ce que sont les cookies", "body": "Les cookies et technologies similaires sont de petits fichiers ou entrées de stockage du navigateur utilisés pour mémoriser des réglages, soutenir la sécurité, mesurer l'usage ou activer des services intégrés." },
+          { "heading": "Exploitant du site", "body": "Le site est actuellement exploité par Saul Loubassa Bighonda sous le nom Bighonda Studios pendant que l'enregistrement est en attente." },
+          { "heading": "Cookies nécessaires", "body": "Le site peut stocker une préférence minimale de consentement afin de se souvenir si les médias optionnels sont acceptés ou refusés. Cela est nécessaire pour respecter votre choix." },
+          { "heading": "Préférences", "body": "La langue fonctionne par routes URL plutôt que par cookie. Tout futur cookie de préférence doit être ajouté à cette politique avant activation." },
+          { "heading": "Analyse", "body": "Aucun fournisseur d'analyse actif n'a été trouvé lors de cet audit. Si un outil d'analyse est ajouté, cette politique et les contrôles de consentement devront être mis à jour." },
+          { "heading": "Médias intégrés et cookies tiers", "body": "Les intégrations YouTube et Spotify sont des médias optionnels. Elles ne sont pas chargées tant que les cookies médias ne sont pas acceptés ou que le visiteur ne choisit pas de les charger. Un lecteur externe peut envoyer des informations au fournisseur." },
+          { "heading": "Durée", "body": "Le choix local de consentement est conservé jusqu'à 180 jours, sauf suppression du stockage du navigateur ou changement des paramètres." },
+          { "heading": "Base légale", "body": "Le stockage nécessaire relève de l'intérêt légitime à exploiter un site conforme. Les cookies médias optionnels reposent sur le consentement lorsque nécessaire." },
+          { "heading": "Accepter, refuser ou modifier", "body": "L'interface propose Tout accepter, Refuser le non essentiel et Gérer les préférences. Vous pouvez modifier votre choix via le lien Paramètres des cookies dans le pied de page." },
+          { "heading": "Contrôles du navigateur", "body": "Vous pouvez aussi bloquer ou supprimer les cookies dans votre navigateur, même si certaines fonctions peuvent alors se comporter différemment." },
+          { "heading": "Mises à jour et contact", "body": "Cette politique doit être mise à jour si de nouveaux cookies, analyses, intégrations, authentifications CMS ou outils marketing sont ajoutés. Les questions peuvent être envoyées à contact@bighondastudios.com." }
+        ]
+      },
+      "sv": {
+        "title": "Cookiepolicy",
+        "description": "Hur cookies, samtyckespreferenser och valfria inbäddade medier hanteras.",
+        "sections": [
+          { "heading": "Vad cookies är", "body": "Cookies och liknande tekniker är små filer eller webbläsarlagringar som används för att komma ihåg inställningar, stödja säkerhet, mäta användning eller aktivera inbäddade tjänster." },
+          { "heading": "Vem driver webbplatsen", "body": "Webbplatsen drivs för närvarande av Saul Loubassa Bighonda under namnet Bighonda Studios medan registrering väntar." },
+          { "heading": "Nödvändiga cookies", "body": "Webbplatsen kan lagra en minimal samtyckespreferens för att komma ihåg om valfria medier accepteras eller avvisas. Detta behövs för att respektera ditt val." },
+          { "heading": "Preferenser", "body": "Språk hanteras via URL-rutter i stället för cookie. Framtida preferenscookies bör läggas till i policyn innan de aktiveras." },
+          { "heading": "Analys", "body": "Ingen aktiv analysleverantör hittades vid denna granskning. Om analys läggs till ska policyn och samtyckeskontrollerna uppdateras först." },
+          { "heading": "Inbäddade medier och tredjepartscookies", "body": "YouTube- och Spotify-inbäddningar är valfria medier. De laddas inte förrän mediacookies accepteras eller besökaren väljer att ladda dem. En extern spelare kan skicka information till leverantören." },
+          { "heading": "Varaktighet", "body": "Det lokala samtyckesvalet sparas upp till 180 dagar om du inte rensar webbläsarlagring eller ändrar cookieinställningar." },
+          { "heading": "Rättslig grund", "body": "Nödvändig lagring används för legitima intressen i att driva en efterlevande webbplats. Valfria mediacookies baseras på samtycke där det krävs." },
+          { "heading": "Acceptera, avvisa eller ändra", "body": "Gränssnittet erbjuder Acceptera alla, Avvisa icke nödvändiga och Hantera inställningar. Du kan ändra valet via Cookieinställningar i sidfoten." },
+          { "heading": "Webbläsarkontroller", "body": "Du kan även blockera eller ta bort cookies i webbläsarens inställningar, även om vissa funktioner då kan fungera annorlunda." },
+          { "heading": "Uppdateringar och kontakt", "body": "Policyn bör uppdateras när nya cookies, analysverktyg, inbäddningar, CMS-autentisering eller marknadsföringsverktyg läggs till. Frågor kan skickas till contact@bighondastudios.com." }
+        ]
+      }
+    },
+    "ai-transparency": {
+      "slug": "ai-transparency",
+      "en": {
+        "title": "AI-Assisted Content Transparency Policy",
+        "description": "How Bighonda Studios discloses and reviews AI-assisted creative material.",
+        "sections": [
+          { "heading": "Purpose of the policy", "body": "Bighonda Studios believes audiences should be able to understand how creative work is made. Where artificial intelligence plays a material role in creating voices, vocals, music, imagery, translations, or other published material, Bighonda Studios aims to disclose that involvement clearly and meaningfully." },
+          { "heading": "Human authorship and creative direction", "body": "Saul Loubassa Bighonda remains responsible for the creative direction, selection, editing, and publication of material presented under the Bighonda Studios name." },
+          { "heading": "AI-assisted music", "body": "Saul writes and creatively directs Music by Saul. Voices, vocals, musical performances, musical arrangements, or production elements may be generated or assisted using AI tools." },
+          { "heading": "Voices and vocals", "body": "Bighonda Studios does not imply that real singers performed on a track unless that is true. AI-generated or AI-assisted voices and vocals should be disclosed in context." },
+          { "heading": "Writing and editorial assistance", "body": "Routine spelling, editing, formatting, drafting support, or technical assistance may be used. Such assistance does not replace Saul's responsibility for final publication decisions." },
+          { "heading": "Website translations", "body": "Website translations may be produced or assisted using AI and human review. The English version remains authoritative until final legal review changes that rule." },
+          { "heading": "Images and photography", "body": "Photography should not be described as AI-generated unless the individual image actually is. Materially AI-generated imagery should be disclosed where it appears." },
+          { "heading": "Teaching videos and podcast content", "body": "Teaching videos and podcast content are presented as Saul's teaching, reflection, or conversation unless a specific page states otherwise." },
+          { "heading": "Human review and responsibility", "body": "AI-assisted content is subject to human review before publication. Bighonda Studios remains responsible for what it chooses to publish." },
+          { "heading": "Accuracy and limitations", "body": "AI tools can produce inaccurate, biased, incomplete, or misleading results. Material facts should be reviewed before publication." },
+          { "heading": "Intellectual property and third-party rights", "body": "AI tools should be used with attention to copyright, publicity rights, privacy, platform terms, and other third-party rights." },
+          { "heading": "Likenesses, voices, and impersonation", "body": "Bighonda Studios does not intentionally use AI to deceptively impersonate real people or mislead audiences about who performed or spoke." },
+          { "heading": "Corrections and questions", "body": "Visitors can report concerns or ask questions through contact@bighondastudios.com." },
+          { "heading": "Policy updates", "body": "This policy may be updated as tools, creative practices, laws, and platform requirements change." }
+        ]
+      },
+      "fr": {
+        "title": "Politique de transparence sur le contenu assisté par IA",
+        "description": "Comment Bighonda Studios signale et révise les éléments créatifs assistés par IA.",
+        "sections": [
+          { "heading": "Objet de la politique", "body": "Bighonda Studios estime que le public doit pouvoir comprendre comment les oeuvres créatives sont réalisées. Lorsque l'intelligence artificielle joue un rôle significatif dans des voix, vocaux, musiques, images, traductions ou autres contenus publiés, Bighonda Studios vise une divulgation claire et utile." },
+          { "heading": "Auteur humain et direction créative", "body": "Saul Loubassa Bighonda reste responsable de la direction créative, de la sélection, de l'édition et de la publication des contenus présentés sous le nom Bighonda Studios." },
+          { "heading": "Musique assistée par IA", "body": "Saul écrit et dirige créativement Music by Saul. Les voix, vocaux, performances musicales, arrangements ou éléments de production peuvent être générés ou assistés par des outils d'IA." },
+          { "heading": "Voix et vocaux", "body": "Bighonda Studios ne laisse pas entendre que de vrais chanteurs ont interprété un titre si ce n'est pas le cas. Les voix ou vocaux générés ou assistés par IA doivent être signalés dans leur contexte." },
+          { "heading": "Écriture et édition", "body": "Des outils courants de correction, édition, formatage, aide à la rédaction ou assistance technique peuvent être utilisés. Ils ne remplacent pas la responsabilité de Saul dans les décisions finales de publication." },
+          { "heading": "Traductions du site", "body": "Les traductions du site peuvent être produites ou assistées par IA et relues humainement. La version anglaise reste la version faisant foi jusqu'à modification après examen juridique final." },
+          { "heading": "Images et photographie", "body": "La photographie ne doit pas être décrite comme générée par IA sauf si l'image concernée l'est réellement. Les images substantiellement générées par IA doivent être signalées à l'endroit pertinent." },
+          { "heading": "Vidéos et podcast", "body": "Les vidéos d'enseignement et contenus de podcast sont présentés comme enseignement, réflexion ou conversation de Saul sauf indication contraire sur une page spécifique." },
+          { "heading": "Revue humaine et responsabilité", "body": "Le contenu assisté par IA fait l'objet d'une revue humaine avant publication. Bighonda Studios reste responsable de ce qu'il choisit de publier." },
+          { "heading": "Exactitude et limites", "body": "Les outils d'IA peuvent produire des résultats inexacts, biaisés, incomplets ou trompeurs. Les faits importants doivent être vérifiés avant publication." },
+          { "heading": "Droits et imitation", "body": "Les outils d'IA doivent être utilisés en tenant compte du droit d'auteur, de l'image, de la vie privée et des conditions de plateformes. Bighonda Studios n'utilise pas intentionnellement l'IA pour usurper ou imiter trompeusement de vraies personnes." },
+          { "heading": "Corrections et mises à jour", "body": "Les questions ou préoccupations peuvent être envoyées à contact@bighondastudios.com. Cette politique peut évoluer avec les outils, pratiques créatives, lois et exigences des plateformes." }
+        ]
+      },
+      "sv": {
+        "title": "Policy för AI-assisterat innehåll",
+        "description": "Hur Bighonda Studios redovisar och granskar AI-assisterat kreativt material.",
+        "sections": [
+          { "heading": "Syfte med policyn", "body": "Bighonda Studios anser att publiken ska kunna förstå hur kreativt arbete skapas. När artificiell intelligens spelar en väsentlig roll i röster, sång, musik, bilder, översättningar eller annat publicerat material strävar Bighonda Studios efter tydlig och meningsfull information." },
+          { "heading": "Mänskligt författarskap och kreativ riktning", "body": "Saul Loubassa Bighonda ansvarar för kreativ riktning, urval, redigering och publicering av material som presenteras under namnet Bighonda Studios." },
+          { "heading": "AI-assisterad musik", "body": "Saul skriver och kreativt leder Music by Saul. Röster, sång, musikaliska framföranden, arrangemang eller produktionselement kan genereras eller assisteras med AI-verktyg." },
+          { "heading": "Röster och sång", "body": "Bighonda Studios antyder inte att verkliga sångare medverkat på en låt om det inte är sant. AI-genererade eller AI-assisterade röster och sång ska redovisas i sitt sammanhang." },
+          { "heading": "Skrivande och redigering", "body": "Vanliga verktyg för stavning, redigering, formatering, skrivstöd eller teknisk hjälp kan användas. Sådan hjälp ersätter inte Sauls ansvar för slutliga publiceringsbeslut." },
+          { "heading": "Webbplatsöversättningar", "body": "Webbplatsöversättningar kan produceras eller assisteras med AI och mänsklig granskning. Den engelska versionen är auktoritativ tills slutlig juridisk granskning ändrar den regeln." },
+          { "heading": "Bilder och fotografi", "body": "Fotografi ska inte beskrivas som AI-genererat om inte den enskilda bilden faktiskt är det. Väsentligt AI-genererade bilder ska redovisas där de visas." },
+          { "heading": "Undervisningsvideor och podcast", "body": "Undervisningsvideor och podcastinnehåll presenteras som Sauls undervisning, reflektion eller samtal om inte en specifik sida anger annat." },
+          { "heading": "Mänsklig granskning och ansvar", "body": "AI-assisterat innehåll granskas mänskligt före publicering. Bighonda Studios ansvarar för vad det väljer att publicera." },
+          { "heading": "Riktighet och begränsningar", "body": "AI-verktyg kan producera felaktiga, vinklade, ofullständiga eller vilseledande resultat. Viktiga fakta bör granskas före publicering." },
+          { "heading": "Rättigheter och imitation", "body": "AI-verktyg ska användas med hänsyn till upphovsrätt, namn- och bildrättigheter, integritet och plattformsvillkor. Bighonda Studios använder inte medvetet AI för att vilseledande imitera verkliga personer." },
+          { "heading": "Rättelser och uppdateringar", "body": "Frågor eller oro kan skickas till contact@bighondastudios.com. Policyn kan uppdateras när verktyg, kreativa praktiker, lagar och plattformskrav förändras." }
+        ]
+      }
+    }
+  },
+  "cookieConsent": {
+    "en": {
+      "bannerTitle": "Cookie choices",
+      "bannerText": "This site uses necessary storage to remember cookie choices. Optional external media from providers such as YouTube and Spotify is loaded only if you accept media cookies.",
+      "acceptAll": "Accept all",
+      "reject": "Reject non-essential",
+      "manage": "Manage preferences",
+      "save": "Save preferences",
+      "mediaLabel": "Optional media embeds",
+      "mediaDescription": "Allow YouTube, Spotify, and similar embedded players to load. These providers may receive usage information or set cookies.",
+      "settings": "Cookie settings",
+      "loadMedia": "Load external media"
+    },
+    "fr": {
+      "bannerTitle": "Choix des cookies",
+      "bannerText": "Ce site utilise un stockage nécessaire pour mémoriser vos choix. Les médias externes optionnels, comme YouTube et Spotify, ne sont chargés que si vous acceptez les cookies médias.",
+      "acceptAll": "Tout accepter",
+      "reject": "Refuser le non essentiel",
+      "manage": "Gérer les préférences",
+      "save": "Enregistrer",
+      "mediaLabel": "Médias intégrés optionnels",
+      "mediaDescription": "Autoriser YouTube, Spotify et les lecteurs similaires. Ces fournisseurs peuvent recevoir des informations d'utilisation ou déposer des cookies.",
+      "settings": "Paramètres des cookies",
+      "loadMedia": "Charger le média externe"
+    },
+    "sv": {
+      "bannerTitle": "Cookieval",
+      "bannerText": "Webbplatsen använder nödvändig lagring för att komma ihåg cookieval. Valfria externa medier från exempelvis YouTube och Spotify laddas endast om du accepterar mediacookies.",
+      "acceptAll": "Acceptera alla",
+      "reject": "Avvisa icke nödvändiga",
+      "manage": "Hantera inställningar",
+      "save": "Spara inställningar",
+      "mediaLabel": "Valfria medieinbäddningar",
+      "mediaDescription": "Tillåt YouTube, Spotify och liknande inbäddade spelare. Dessa leverantörer kan ta emot användningsinformation eller sätta cookies.",
+      "settings": "Cookieinställningar",
+      "loadMedia": "Ladda externt media"
+    }
+  }
+}

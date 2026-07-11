@@ -5,7 +5,7 @@
   },
   {
     "question": "Are photography prints available for purchase?",
-    "answer": "Yes. Each photo can include a purchase link, price, print sizes, and licensing inquiry link. Placeholder links can be replaced with Stripe Payment Links, Shopify, Gumroad, or a contact form."
+    "answer": "Photography print and licensing interest can be handled by enquiry while registration is pending. Direct checkout or payment links should only be enabled after registration, deliberate owner approval, and legal review."
   },
   {
     "question": "How are podcast episodes updated?",

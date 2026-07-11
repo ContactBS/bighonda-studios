@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { ButtonLink } from "@/components/ButtonLink";
 import { ContactForm } from "@/components/ContactForm";
+import { LegalNotice } from "@/components/LegalNotice";
 import { SectionHeader } from "@/components/SectionHeader";
 import { books, getBookingUrl, getContactEmail, podcast, site } from "@/lib/content";
+import { acceptsDirectPayments } from "@/lib/legal";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   const contactEmail = getContactEmail();
-  const bookingUrl = getBookingUrl();
+  const bookingUrl = acceptsDirectPayments() ? getBookingUrl() : "";
 
   return (
     <section className="section-pad">
@@ -22,6 +24,9 @@ export default function ContactPage() {
             title="For books, sermons, interviews, photos, and thoughtful gatherings."
             description="Send a general note, request a booking, inquire about photography prints or licensing, or invite Saul into a conversation."
           />
+          <div className="mt-6">
+            <LegalNotice />
+          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href={`mailto:${contactEmail}`}>Email {contactEmail}</ButtonLink>
             {bookingUrl ? <ButtonLink href={bookingUrl} variant="secondary">Book a Time</ButtonLink> : null}
